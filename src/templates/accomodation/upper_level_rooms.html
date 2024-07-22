@@ -1,0 +1,73 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<section
+  class="elementor-section elementor-top-section elementor-element elementor-element-5e01e1c1 elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-reverse-mobile elementor-section-height-default elementor-invisible"
+  data-id="5e01e1c1"
+  data-element_type="section"
+  data-settings='{"background_background":"classic","animation":"fadeIn"}'
+>
+  <div class="elementor-container elementor-column-gap-no">
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6c475330"
+      data-id="6c475330"
+      data-element_type="column"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-511780d3 elementor-widget elementor-widget-heading"
+          data-id="511780d3"
+          data-element_type="widget"
+          data-widget_type="heading.default"
+        >
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              {{page.upper_level_room.name|title}}
+            </h2>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-a42745e elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+          data-id="a42745e"
+          data-element_type="widget"
+          data-widget_type="divider.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-divider">
+              <span class="elementor-divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-5be0bc86 elementor-widget elementor-widget-text-editor"
+          data-id="5be0bc86"
+          data-element_type="widget"
+          data-widget_type="text-editor.default"
+        >
+          <div class="elementor-widget-container">
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                        {{page.upper_level_room.descripion|title}}
+                    </div>
+                    <div>&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3d96474e"
+      data-id="3d96474e"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap">
+        <img src="{% image page.upper_level_room.image original as photo %}{{photo.url}}" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+</section>

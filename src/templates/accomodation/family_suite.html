@@ -1,0 +1,62 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<section
+  class="elementor-section elementor-top-section elementor-element elementor-element-7a68cb9a elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default elementor-invisible"
+  data-id="7a68cb9a"
+  data-element_type="section"
+  data-settings='{"background_background":"classic","animation":"fadeIn"}'
+>
+  <div class="elementor-container elementor-column-gap-no">
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6ff704fa"
+      data-id="6ff704fa"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap">
+        <img src="{% image page.family_suite.image original as photo %}{{photo.url}}" width="100%" alt="">
+      </div>
+    </div>
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-100449cb"
+      data-id="100449cb"
+      data-element_type="column"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-66819f48 elementor-widget elementor-widget-heading"
+          data-id="66819f48"
+          data-element_type="widget"
+          data-widget_type="heading.default"
+        >
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              {{page.family_suite.name|title}}
+            </h2>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-162949c2 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+          data-id="162949c2"
+          data-element_type="widget"
+          data-widget_type="divider.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-divider">
+              <span class="elementor-divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-653c82e1 elementor-widget elementor-widget-text-editor"
+          data-id="653c82e1"
+          data-element_type="widget"
+          data-widget_type="text-editor.default"
+        >
+          <div class="elementor-widget-container">
+            {{page.family_suite.description|title}}            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

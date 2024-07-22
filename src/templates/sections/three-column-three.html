@@ -1,3 +1,4 @@
+{% load wagtailcore_tags wagtailimages_tags %}
 <section
   class="elementor-section elementor-top-section elementor-element elementor-element-1811a77a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
   data-id="1811a77a"
@@ -5,6 +6,7 @@
   data-settings='{"animation":"fadeIn"}'
 >
   <div class="elementor-container elementor-column-gap-extended">
+    {% for entry in page.services.all %}
     <div
       class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-456ba29d"
       data-id="456ba29d"
@@ -20,9 +22,9 @@
           <div class="elementor-widget-container">
             <img
               decoding="async"
-              src="https://www.oodlesretreat.com/wp-content/uploads/elementor/thumbs/food-2-pde0p1nq94cattop1ayukb9o0l2ymhj0ci8kyy78ag.jpg"
-              title="Family celebration or a garden party outside in the backyard."
-              alt="Close-up of unrecognizable people putting food on their plates. Family celebration outside in the backyard. Big garden party."
+              src="{% image entry.image fill-1024x500-c100 as placeholder %}{{placeholder.url}}"
+              title="{{entry.name}}"
+              alt="{{entry.name}}"
               loading="lazy"
             />
           </div>
@@ -35,7 +37,7 @@
         >
           <div class="elementor-widget-container">
             <h2 class="elementor-heading-title elementor-size-default">
-              Private Chefs & Catering
+              {{entry.name}}
             </h2>
           </div>
         </div>
@@ -46,11 +48,7 @@
           data-widget_type="text-editor.default"
         >
           <div class="elementor-widget-container">
-            <p>
-              Our skilled and passionate chefs take pride in creating dishes,
-              using seasonal, locally sourced ingredients, we cater to all
-              dietary preferences
-            </p>
+            <p>{{entry.text}}</p>
           </div>
         </div>
         <div
@@ -63,10 +61,12 @@
             <div class="elementor-button-wrapper">
               <a
                 class="elementor-button elementor-button-link elementor-size-sm"
-                href="https://www.oodlesretreat.com/chef-hire/"
+                href="{% if entry.services_section_cta_link %}{% pageurl entry.cta_link %}{% endif %}"
               >
                 <span class="elementor-button-content-wrapper">
-                  <span class="elementor-button-text">MEET THE CHEFS</span>
+                  <span class="elementor-button-text"
+                    >{{entry.cta_text}}</span
+                  >
                 </span>
               </a>
             </div>
@@ -86,6 +86,8 @@
         </div>
       </div>
     </div>
+    {% endfor %}
+{% comment %} 
     <div
       class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-30280a93"
       data-id="30280a93"
@@ -248,5 +250,6 @@
         </div>
       </div>
     </div>
+ {% endcomment %}
   </div>
 </section>

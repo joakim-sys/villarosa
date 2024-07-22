@@ -1,3 +1,5 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
 <section
   class="elementor-section elementor-top-section elementor-element elementor-element-761642c4 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
   data-id="761642c4"
@@ -20,7 +22,7 @@
         >
           <div class="elementor-widget-container">
             <h2 class="elementor-heading-title elementor-size-default">
-              The Location
+              {{page.location_section_title}}
             </h2>
           </div>
         </div>
@@ -44,10 +46,7 @@
         >
           <div class="elementor-widget-container">
             <p>
-              Benissa is one of the oldest towns in the Costa Blanca. Situated
-              275m above sea level in the Province of Alicante. It is a stone´s
-              throw away from the N332 (national road) and the motorway that
-              connects Alicante and Valencia.
+              {{page.location_section_subheading}}
             </p>
           </div>
         </div>
@@ -57,6 +56,8 @@
           data-element_type="section"
         >
           <div class="elementor-container elementor-column-gap-wide">
+            {% for location in page.locations.all %}
+            {% if forloop.first %}
             <div
               class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-2b5d501a"
               data-id="2b5d501a"
@@ -72,7 +73,7 @@
                   <div class="elementor-widget-container">
                     <img
                       decoding="async"
-                      src="https://www.oodlesretreat.com/wp-content/uploads/elementor/thumbs/Benissa-q0lmi4gbcuifozjee9t36w7osimxluf3gzadr0qmd4.jpg"
+                      src="{% image location.image fill-1024x500-c100 as placeholder %}{{placeholder.url}}"
                       title="Benissa"
                       alt="Benissa"
                       loading="lazy"
@@ -87,7 +88,7 @@
                 >
                   <div class="elementor-widget-container">
                     <h2 class="elementor-heading-title elementor-size-default">
-                      Benisssa Town
+                      {{location.name|title}}
                     </h2>
                   </div>
                 </div>
@@ -99,19 +100,13 @@
                 >
                   <div class="elementor-widget-container">
                     <p>
-                      Benissa is an ancient town located on the Costa Blanca,
-                      consisting of two parts: a medieval town center and a
-                      coastal area. The town has 4 km of coastline featuring a
-                      variety of beaches, coves, and cliffs. The town center of
-                      Benissa is charming, with the striking Purissima Xiqueta
-                      Cathedral standing out in the large town square,
-                      surrounded by various bars and restaurants, making it a
-                      perfect place for visitors to enjoy.
+                    {{location.text}}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+            {% else %}
             <div
               class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1b69e88f"
               data-id="1b69e88f"
@@ -127,7 +122,7 @@
                   <div class="elementor-widget-container">
                     <img
                       decoding="async"
-                      src="https://www.oodlesretreat.com/wp-content/uploads/elementor/thumbs/Cumbredel-sol-pddz6uas5251bcf5jvhcrzoqso8yquc8w7wkoikj3s.jpg"
+                      src="{% image location.image fill-1024x500-c100 as placeholder %}{{placeholder.url}}"
                       title="Cumbredel sol"
                       alt="Cumbredel sol"
                       loading="lazy"
@@ -142,7 +137,7 @@
                 >
                   <div class="elementor-widget-container">
                     <h2 class="elementor-heading-title elementor-size-default">
-                      Benissa Costa
+                      {{location.name|title}}
                     </h2>
                   </div>
                 </div>
@@ -154,19 +149,14 @@
                 >
                   <div class="elementor-widget-container">
                     <p>
-                      Benissa&#8217;s coastline stretches 4km and is situated
-                      between the towns of Moraira and Calpe. The coastline
-                      boasts a variety of beaches, coves, and cliffs. La Fustera
-                      is considered the best beach in Benissa, with a small
-                      sandy shoreline. Another favorite is Bassetes beach, which
-                      is home to Benissa&#8217;s Club Nautico and several
-                      excellent restaurants. A great location for water sports,
-                      stand-up paddleboarding, and scuba diving.
+                      {{location.text}}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+            {% endif %}
+            {% endfor %}
           </div>
         </section>
       </div>

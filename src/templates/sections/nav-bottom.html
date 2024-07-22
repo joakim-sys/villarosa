@@ -1,3 +1,5 @@
+{% load static navigation_tags wagtailcore_tags %}
+
 <section
   class="elementor-section elementor-top-section elementor-element elementor-element-3e53090 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
   data-id="3e53090"
@@ -19,19 +21,19 @@
           data-widget_type="text-editor.default"
         >
           <div class="elementor-widget-container">
-            <h1>
-              <strong>Let&#8217;s chat about your next vacation&#8230;</strong>
-            </h1>
+            {% get_footer_header %}
             <p>
-              <strong>Address: Benissa 03720, Alicante, Spain</strong
-              ><br /><strong>Phone: (+34) 603 705 283</strong><br /><strong
-                >Email:
-                <a
+              <strong>Address: {{settings.base.GenericSettings.address}}</strong
+              ><br /><strong>Phone: {{settings.base.GenericSettings.phone}}</strong><br /><strong
+                >Email: {{settings.base.GenericSettings.email}}
+                {% comment %} <a
                   href="/cdn-cgi/l/email-protection"
                   class="__cf_email__"
                   data-cfemail="fa93949c95ba95959e969f89889f8e889f9b8ed4999597"
-                  >[email&#160;protected]</a
-                ><br
+                  >[email&#160;protected]
+                </a>
+                 {% endcomment %}
+                <br
               /></strong>
             </p>
           </div>
@@ -45,7 +47,7 @@
           <div class="elementor-widget-container">
             <ul class="elementor-icon-list-items elementor-inline-items">
               <li class="elementor-icon-list-item elementor-inline-item">
-                <a href="https://www.facebook.com/OodlesRetreat">
+                <a href="{{settings.base.GenericSettings.facebook_url}}">
                   <span class="elementor-icon-list-icon">
                     <svg
                       aria-hidden="true"
@@ -62,7 +64,7 @@
                 </a>
               </li>
               <li class="elementor-icon-list-item elementor-inline-item">
-                <a href="https://twitter.com/OodlesRetreat">
+                <a href="{{settings.base.GenericSettings.twitter_url}}">
                   <span class="elementor-icon-list-icon">
                     <svg
                       aria-hidden="true"
@@ -79,7 +81,7 @@
                 </a>
               </li>
               <li class="elementor-icon-list-item elementor-inline-item">
-                <a href="https://es.linkedin.com/company/oodles-retreat">
+                <a href="{{settings.base.GenericSettings.linkedin_url}}">
                   <span class="elementor-icon-list-icon">
                     <svg
                       aria-hidden="true"
@@ -96,7 +98,7 @@
                 </a>
               </li>
               <li class="elementor-icon-list-item elementor-inline-item">
-                <a href="https://www.instagram.com/oodlesretreat/">
+                <a href="{{settings.base.GenericSettings.instagram_url}}">
                   <span class="elementor-icon-list-icon">
                     <svg
                       aria-hidden="true"
@@ -114,7 +116,7 @@
               </li>
               <li class="elementor-icon-list-item elementor-inline-item">
                 <a
-                  href="https://www.youtube.com/channel/UCZ9t7pVG8Xb_TvIVjAGsWzw"
+                  href="{{settings.base.GenericSettings.youtube_url}}"
                 >
                   <span class="elementor-icon-list-icon">
                     <svg
@@ -142,8 +144,8 @@
         >
           <div class="elementor-widget-container">
             <h2 class="elementor-heading-title elementor-size-default">
-              <a href="https://www.oodlesretreat.com"
-                >© Oodles Retreat. All Rights Reserved.</a
+              <a href="/"
+                >© {{settings.base.SiteSettings.title_suffix}}. All Rights Reserved.</a
               >
             </h2>
           </div>
@@ -165,7 +167,7 @@
           <div class="elementor-widget-container">
             <link
               rel="stylesheet"
-              href="https://www.oodlesretreat.com/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css"
+              href="{% static 'assets/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css' %}"
             />
             <div class="elementor-sitemap-wrap">
               <div class="elementor-sitemap-section">
@@ -174,100 +176,17 @@
                 >
                   Get in touch!
                 </h2>
+                {% get_footer_links as footer_links %}
                 <ul class="elementor-sitemap-list elementor-sitemap-page-list">
+                  {% for link in footer_links %}
                   <li
                     class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-1340"
                   >
-                    <a href="https://www.oodlesretreat.com/contact-us/"
-                      >Contact us</a
+                    <a href="{{link.url}}"
+                      >{{link.title}}</a
                     >
                   </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-3124"
-                  >
-                    <a href="https://www.oodlesretreat.com/accommodation/"
-                      >Accommodation</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-3275"
-                  >
-                    <a href="https://www.oodlesretreat.com/services/"
-                      >Services</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-3452"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/terms-and-conditions/"
-                      >Terms and Conditions</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-3469"
-                  >
-                    <a href="https://www.oodlesretreat.com/privacy-policy-2/"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-3908"
-                  >
-                    <a href="https://www.oodlesretreat.com/">Home</a>
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-9566"
-                  >
-                    <a href="https://www.oodlesretreat.com/prices-availability/"
-                      >Prices &#038; Availability</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-9900"
-                  >
-                    <a href="https://www.oodlesretreat.com/babysitting-service/"
-                      >Babysitting Service</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-10032"
-                  >
-                    <a href="https://www.oodlesretreat.com/celebration-cakes/"
-                      >Celebration Cakes</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-10160"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/guided-walks-and-tours/"
-                      >Guided Walks and Tours</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-10315"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/excursions-and-tours/"
-                      >Excursions and Tours</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-10477"
-                  >
-                    <a href="https://www.oodlesretreat.com/availability-prices/"
-                      >Availability &#038; Prices</a
-                    >
-                  </li>
-                  <li
-                    class="elementor-sitemap-item elementor-sitemap-item-page page_item page-item-10706"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/boat-trips-and-tours/"
-                      >Boat Trips and Tours</a
-                    >
-                  </li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>

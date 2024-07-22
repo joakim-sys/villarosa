@@ -1,3 +1,4 @@
+{% load wagtailcore_tags %}
 <section
   class="elementor-section elementor-top-section elementor-element elementor-element-3a224702 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
   data-id="3a224702"
@@ -30,8 +31,8 @@
         >
           <div class="elementor-widget-container">
             <h2 class="elementor-heading-title elementor-size-default">
-              <a href="https://www.oodlesretreat.com/book-here/"
-                >Let's plan your next getaway...</a
+              <a href="{% if page.styled_link_text_link %}{% pageurl page.styled_link_text_link %}{% endif %}"
+                >{{page.styled_link_text}}</a
               >
             </h2>
           </div>

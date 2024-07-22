@@ -1,0 +1,110 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<section
+  class="elementor-section elementor-top-section elementor-element elementor-element-1db097aa elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-reverse-mobile elementor-section-height-default elementor-invisible"
+  data-id="1db097aa"
+  data-element_type="section"
+  data-settings='{"background_background":"classic","animation":"fadeIn"}'
+>
+  <div class="elementor-container elementor-column-gap-no">
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-471fb9dc"
+      data-id="471fb9dc"
+      data-element_type="column"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-5d0880a9 elementor-widget elementor-widget-heading"
+          data-id="5d0880a9"
+          data-element_type="widget"
+          data-widget_type="heading.default"
+        >
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              {{page.retreat_facility.name|title}}
+            </h2>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-34316c09 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+          data-id="34316c09"
+          data-element_type="widget"
+          data-widget_type="divider.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-divider">
+              <span class="elementor-divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-22212582 elementor-widget elementor-widget-text-editor"
+          data-id="22212582"
+          data-element_type="widget"
+          data-widget_type="text-editor.default"
+        >
+          <div class="elementor-widget-container">
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div class="text-left">
+                        {{page.retreat_facility.description|richtext}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-ff89e1c elementor-align-center elementor-widget elementor-widget-button"
+          data-id="ff89e1c"
+          data-element_type="widget"
+          data-widget_type="button.default"
+        >
+          {% if page.retreat_facility.page %}
+          <div class="elementor-widget-container">
+            <div class="elementor-button-wrapper">
+              <a
+                class="elementor-button elementor-button-link elementor-size-sm"
+                href="{% pageurl page.retreat_facility.page %}"
+              >
+                <span class="elementor-button-content-wrapper">
+                  <span class="elementor-button-text"
+                    >{{page.retreat_facility.cta_text}}</span
+                  >
+                </span>
+              </a>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        <div
+          class="elementor-element elementor-element-54bb4fa0 elementor-widget elementor-widget-spacer"
+          data-id="54bb4fa0"
+          data-element_type="widget"
+          data-widget_type="spacer.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-spacer">
+              <div class="elementor-spacer-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-174336bf"
+      data-id="174336bf"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap">
+        <img src="{% image page.retreat_facility.image original as photo %}{{photo.url}}" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+

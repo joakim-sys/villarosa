@@ -1,4 +1,5 @@
-{% load static %}
+{% load static wagtailcore_tags navigation_tags %}
+{% get_menu as navigation_menu %}
 
 <div class="nav-area header-type-2 no-cache-1721235185">
   <header
@@ -38,277 +39,47 @@
           <div class="header-comp-nav text-center">
             <nav class="navi">
               <ul id="main-menu" class="main-menu">
+<!-- 
                 <li
                   id="menu-item-3916"
                   class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3908 current_page_item menu-item-3916"
                 >
                   <a href="/" aria-current="page">HOME</a>
                 </li>
+ -->
+
+                {% for item in navigation_menu %}
+                {% if item.show_submenu %}
                 <li
                   id="menu-item-3603"
                   class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3603"
                 >
-                  <a href="#">OODLES RETREAT</a>
+                  <a href="#">{{item.title|upper}}</a>
                   <ul class="sub-menu">
+                    {% for child in item.navigation_menu_items.all %}
                     <li
                       id="menu-item-3592"
                       class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3592"
                     >
-                      <a href="https://www.oodlesretreat.com/accommodation/"
-                        >ACCOMMODATION</a
+                      <a href="{{child.link}}"
+                        >{{child.title|upper}}</a
                       >
                     </li>
-                    <li
-                      id="menu-item-10624"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10624"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/availability-prices/"
-                        >AVAILABILITY &#038; PRICES</a
-                      >
-                    </li>
+                    {% endfor %}
                   </ul>
                 </li>
+
+                {% else %}
                 <li
-                  id="menu-item-8572"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8572"
+                  id="menu-item-3916"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3908 current_page_item menu-item-3916"
                 >
-                  <a href="https://www.oodlesretreat.com/groups/">GROUPS</a>
-                </li>
-                <li
-                  id="menu-item-3847"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3847"
-                >
-                  <a href="#">RETREATS</a>
-                  <ul class="sub-menu">
-                    <li
-                      id="menu-item-3917"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"
-                    >
-                      <a href="https://www.oodlesretreat.com/host-a-retreat/"
-                        >HOST A RETREAT</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-8252"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8252"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/retreat-accommodation/"
-                        >ACCOMMODATION</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-8122"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8122"
-                    >
-                      <a href="https://www.oodlesretreat.com/retreat-catering/"
-                        >CATERING</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-10319"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10319"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/excursions-and-tours/"
-                        >EXCURSIONS &#038; TOURS</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-9457"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9457"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/sound-bath-healing/"
-                        >SOUND BATH HEALING</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-9815"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9815"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/voice-therapy-by-julia-bless/"
-                        >VOICE THERAPY by Julia Bless</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-7376"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7376"
-                    >
-                      <a href="https://www.oodlesretreat.com/yoga-classes/"
-                        >YOGA &#038; PILATE CLASSES</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-6061"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6061"
-                    >
-                      <a href="https://www.oodlesretreat.com/treatments/"
-                        >TREATMENTS &#038; THERAPIES</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  id="menu-item-10321"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10321"
-                >
-                  <a href="#">THINGS TO DO</a>
-                  <ul class="sub-menu">
-                    <li
-                      id="menu-item-5059"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5059"
-                    >
-                      <a href="https://www.oodlesretreat.com/activities/"
-                        >ACTIVITIES</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-10746"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10746"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/boat-trips-and-tours/"
-                        >BOAT TRIPS &#038; TOURS</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-10320"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10320"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/excursions-and-tours/"
-                        >EXCURSIONS</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  id="menu-item-9877"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9877"
-                >
-                  <a href="https://www.oodlesretreat.com/treatments/"
-                    >TREATMENTS</a
-                  >
-                </li>
-                <li
-                  id="menu-item-8818"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8818"
-                >
-                  <a href="#">SERVICES</a>
-                  <ul class="sub-menu">
-                    <li
-                      id="menu-item-9916"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9916"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/babysitting-service/"
-                        >BABYSITTING SERVICE</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-7899"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7899"
-                    >
-                      <a href="https://www.oodlesretreat.com/bike-hire/"
-                        >BIKE HIRE</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-5598"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5598"
-                    >
-                      <a href="https://www.oodlesretreat.com/carhiretransfers/"
-                        >CAR HIRE &#038; TRANSFERS</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-10103"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10103"
-                    >
-                      <a href="https://www.oodlesretreat.com/celebration-cakes/"
-                        >CELEBRATION CAKES</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-5599"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5599"
-                    >
-                      <a href="https://www.oodlesretreat.com/chef-hire/"
-                        >CHEF HIRE</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-5891"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5891"
-                    >
-                      <a href="https://www.oodlesretreat.com/restaurant-guide/"
-                        >RESTAURANT GUIDE</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-9393"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9393"
-                    >
-                      <a href="https://www.oodlesretreat.com/supermarkets/"
-                        >SUPERMARKETS</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  id="menu-item-6312"
-                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6312"
-                >
-                  <a href="https://www.oodlesretreat.com/book-here/"
-                    >BOOK HERE</a
-                  >
-                  <ul class="sub-menu">
-                    <li
-                      id="menu-item-3650"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3650"
-                    >
-                      <a href="https://www.oodlesretreat.com/contact-us/"
-                        >CONTACT US</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li
-                  id="menu-item-3605"
-                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3605"
-                >
-                  <a href="#">OTHER</a>
-                  <ul class="sub-menu">
-                    <li
-                      id="menu-item-3598"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3598"
-                    >
-                      <a href="https://www.oodlesretreat.com/privacy-policy-2/"
-                        >PRIVACY POLICY</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-3599"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3599"
-                    >
-                      <a href="https://www.oodlesretreat.com/reviews/"
-                        >REVIEWS</a
-                      >
-                    </li>
-                    <li
-                      id="menu-item-3601"
-                      class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3601"
-                    >
-                      <a
-                        href="https://www.oodlesretreat.com/terms-and-conditions/"
-                        >TERMS &#038; CONDITIONS</a
-                      >
-                    </li>
-                  </ul>
-                </li>
+                  <a href="{{item.first_child.link}}" aria-current="page">{{item.first_child.title|upper}}</a>
+                </li>                
+
+                {% endif %}
+                
+                {% endfor %}
               </ul>
             </nav>
           </div>
@@ -338,7 +109,7 @@
           </div>
           <div class="col-xs-6">
             <div class="mobile-logo text-center">
-              <a href="https://www.oodlesretreat.com/">
+              <a href="/">
                 <img
                   src="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Oodles-Retreat15.png"
                   alt="www.oodlesretreat.com"
@@ -372,239 +143,35 @@
             class="nav-dropdown main-nav-dropdown collapse navbar-collapse"
           >
             <ul id="mobile-menu" class="mobile-menu">
-              <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3908 current_page_item menu-item-3916"
-              >
-                <a href="https://www.oodlesretreat.com/" aria-current="page"
-                  >HOME</a
-                >
-              </li>
+              {% for menu in navigation_menu %}
+              {% if menu.show_submenu  %}
               <li
                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3603"
               >
-                <a href="#">OODLES RETREAT</a>
+                <a href="#">{{menu.title|upper}}</a>
                 <ul class="sub-menu">
+                  {% for item in menu.navigation_menu_items.all %}
                   <li
                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3592"
                   >
-                    <a href="https://www.oodlesretreat.com/accommodation/"
-                      >ACCOMMODATION</a
+                    <a href="{{item.link}}"
+                      >{{item.title|upper}}</a
                     >
                   </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10624"
-                  >
-                    <a href="https://www.oodlesretreat.com/availability-prices/"
-                      >AVAILABILITY &#038; PRICES</a
-                    >
-                  </li>
+                  {% endfor %}
                 </ul>
               </li>
+              {% else %}
               <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8572"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3908 current_page_item menu-item-3916"
               >
-                <a href="https://www.oodlesretreat.com/groups/">GROUPS</a>
-              </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3847"
-              >
-                <a href="#">RETREATS</a>
-                <ul class="sub-menu">
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3917"
-                  >
-                    <a href="https://www.oodlesretreat.com/host-a-retreat/"
-                      >HOST A RETREAT</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8252"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/retreat-accommodation/"
-                      >ACCOMMODATION</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8122"
-                  >
-                    <a href="https://www.oodlesretreat.com/retreat-catering/"
-                      >CATERING</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10319"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/excursions-and-tours/"
-                      >EXCURSIONS &#038; TOURS</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9457"
-                  >
-                    <a href="https://www.oodlesretreat.com/sound-bath-healing/"
-                      >SOUND BATH HEALING</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9815"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/voice-therapy-by-julia-bless/"
-                      >VOICE THERAPY by Julia Bless</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7376"
-                  >
-                    <a href="https://www.oodlesretreat.com/yoga-classes/"
-                      >YOGA &#038; PILATE CLASSES</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6061"
-                  >
-                    <a href="https://www.oodlesretreat.com/treatments/"
-                      >TREATMENTS &#038; THERAPIES</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-10321"
-              >
-                <a href="#">THINGS TO DO</a>
-                <ul class="sub-menu">
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5059"
-                  >
-                    <a href="https://www.oodlesretreat.com/activities/"
-                      >ACTIVITIES</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10746"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/boat-trips-and-tours/"
-                      >BOAT TRIPS &#038; TOURS</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10320"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/excursions-and-tours/"
-                      >EXCURSIONS</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9877"
-              >
-                <a href="https://www.oodlesretreat.com/treatments/"
-                  >TREATMENTS</a
+                <a href="{{menu.first_child.link}}" aria-current="page"
+                  >{{menu.first_child.title|upper}}</a
                 >
               </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8818"
-              >
-                <a href="#">SERVICES</a>
-                <ul class="sub-menu">
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9916"
-                  >
-                    <a href="https://www.oodlesretreat.com/babysitting-service/"
-                      >BABYSITTING SERVICE</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7899"
-                  >
-                    <a href="https://www.oodlesretreat.com/bike-hire/"
-                      >BIKE HIRE</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5598"
-                  >
-                    <a href="https://www.oodlesretreat.com/carhiretransfers/"
-                      >CAR HIRE &#038; TRANSFERS</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10103"
-                  >
-                    <a href="https://www.oodlesretreat.com/celebration-cakes/"
-                      >CELEBRATION CAKES</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5599"
-                  >
-                    <a href="https://www.oodlesretreat.com/chef-hire/"
-                      >CHEF HIRE</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5891"
-                  >
-                    <a href="https://www.oodlesretreat.com/restaurant-guide/"
-                      >RESTAURANT GUIDE</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9393"
-                  >
-                    <a href="https://www.oodlesretreat.com/supermarkets/"
-                      >SUPERMARKETS</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li
-                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6312"
-              >
-                <a href="https://www.oodlesretreat.com/book-here/">BOOK HERE</a>
-                <ul class="sub-menu">
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3650"
-                  >
-                    <a href="https://www.oodlesretreat.com/contact-us/"
-                      >CONTACT US</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li
-                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3605"
-              >
-                <a href="#">OTHER</a>
-                <ul class="sub-menu">
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3598"
-                  >
-                    <a href="https://www.oodlesretreat.com/privacy-policy-2/"
-                      >PRIVACY POLICY</a
-                    >
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3599"
-                  >
-                    <a href="https://www.oodlesretreat.com/reviews/">REVIEWS</a>
-                  </li>
-                  <li
-                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3601"
-                  >
-                    <a
-                      href="https://www.oodlesretreat.com/terms-and-conditions/"
-                      >TERMS &#038; CONDITIONS</a
-                    >
-                  </li>
-                </ul>
-              </li>
+
+              {% endif %}
+              {% endfor %}
             </ul>
           </nav>
         </div>

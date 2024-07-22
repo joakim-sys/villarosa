@@ -1,0 +1,89 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+<section
+  class="elementor-section elementor-top-section elementor-element elementor-element-1a1207e0 elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-reverse-mobile elementor-section-height-default elementor-invisible"
+  data-id="1a1207e0"
+  data-element_type="section"
+  data-settings='{"background_background":"classic","animation":"fadeIn"}'
+>
+  <div class="elementor-container elementor-column-gap-no">
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-53037fe6"
+      data-id="53037fe6"
+      data-element_type="column"
+      data-settings='{"background_background":"classic"}'
+    >
+      <div class="elementor-widget-wrap elementor-element-populated">
+        <div
+          class="elementor-element elementor-element-10f54e1e elementor-widget elementor-widget-heading"
+          data-id="10f54e1e"
+          data-element_type="widget"
+          data-widget_type="heading.default"
+        >
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              <a href="#"
+                >{{page.deluxe_suite.name|title}}
+              </a>
+            </h2>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-42cb2e47 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+          data-id="42cb2e47"
+          data-element_type="widget"
+          data-widget_type="divider.default"
+        >
+          <div class="elementor-widget-container">
+            <div class="elementor-divider">
+              <span class="elementor-divider-separator"> </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-4694ba7b elementor-widget elementor-widget-text-editor"
+          data-id="4694ba7b"
+          data-element_type="widget"
+          data-widget_type="text-editor.default"
+        >
+          <div class="elementor-widget-container">
+            <div
+              class="wpb_text_column wpb_content_element vc_custom_1542316979999"
+            >
+              <div class="wpb_wrapper">
+                <div
+                  class="wpb_text_column wpb_content_element vc_custom_1542316936543"
+                >
+                  <div class="wpb_wrapper">
+                    <div class="wpb_column vc_column_container vc_col-sm-8">
+                      <div class="vc_column-inner">
+                        <div class="wpb_wrapper">
+                          <div
+                            class="wpb_text_column wpb_content_element vc_custom_1542232828807"
+                          >
+                            <div class="wpb_wrapper">
+                                {{page.deluxe_suite.description|richtext}}
+                            </div>
+                          </div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-41b7c897"
+      data-id="41b7c897"
+      data-element_type="column"
+    >
+      <div class="elementor-widget-wrap">
+        <img src="{% image page.deluxe_suite.image original as photo %}{{photo.url}}" width="100%" alt="">
+      </div>
+    </div>
+  </div>
+</section>

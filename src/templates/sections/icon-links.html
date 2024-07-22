@@ -1,3 +1,4 @@
+{% load static wagtailcore_tags %}
 <section
   class="elementor-section elementor-inner-section elementor-element elementor-element-2f890534 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
   data-id="2f890534"
@@ -6,6 +7,8 @@
 >
   <div class="elementor-background-overlay"></div>
   <div class="elementor-container elementor-column-gap-wide">
+    {% for entry in page.icon_links.all %}
+    {% if entry.icon == 'e_fas_swimmer' %}
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-4fdf26d8"
       data-id="4fdf26d8"
@@ -21,18 +24,18 @@
           <div class="elementor-widget-container">
             <link
               rel="stylesheet"
-              href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css"
+              href="{% static 'assets/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css' %}"
             />
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/activities/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
                   <svg
                     aria-hidden="true"
-                    class="e-font-icon-svg e-fas-swimmer"
+                    class="e-font-icon-svg {{entry.icon|slugify}}"
                     viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -44,8 +47,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/activities/">
-                    ACTIVITIES
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
               </div>
@@ -54,6 +57,8 @@
         </div>
       </div>
     </div>
+
+    {% elif entry.icon == 'e_fas_biking' %} 
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-4d650567"
       data-id="4d650567"
@@ -70,13 +75,13 @@
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/bike-hire/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
                   <svg
                     aria-hidden="true"
-                    class="e-font-icon-svg e-fas-biking"
+                    class="e-font-icon-svg {{entry.icon|slugify}}"
                     viewBox="0 0 640 512"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -88,8 +93,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/bike-hire/">
-                    BIKE HIRE
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
               </div>
@@ -98,6 +103,8 @@
         </div>
       </div>
     </div>
+
+    {% elif entry.icon == 'e_fas_car_alt' %} 
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-6978aed9"
       data-id="6978aed9"
@@ -114,7 +121,7 @@
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/carhiretransfers/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
@@ -132,8 +139,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/carhiretransfers/">
-                    CAR HIRE
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
                 <p class="elementor-icon-box-description"></p>
@@ -143,6 +150,8 @@
         </div>
       </div>
     </div>
+
+    {% elif entry.icon == 'e_fas_bus' %} 
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-2db6aa93"
       data-id="2db6aa93"
@@ -159,7 +168,7 @@
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/excursions-and-tours/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
@@ -177,8 +186,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/excursions-and-tours/">
-                    EXCURSIONS
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
                 <p class="elementor-icon-box-description"></p>
@@ -188,6 +197,8 @@
         </div>
       </div>
     </div>
+
+    {% elif entry.icon == 'e_fas_glass_cheers' %} 
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-7304c371"
       data-id="7304c371"
@@ -204,7 +215,7 @@
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/restaurant-guide/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
@@ -222,8 +233,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/restaurant-guide/">
-                    RESTAURANTS
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
               </div>
@@ -232,6 +243,8 @@
         </div>
       </div>
     </div>
+
+    {% elif entry.icon == 'e_fas_atom' %} 
     <div
       class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-4c635e11"
       data-id="4c635e11"
@@ -248,7 +261,7 @@
             <div class="elementor-icon-box-wrapper">
               <div class="elementor-icon-box-icon">
                 <a
-                  href="https://www.oodlesretreat.com/treatments/"
+                  href="{% if entry.link %}{% pageurl entry.link %}{% endif %}"
                   class="elementor-icon elementor-animation-"
                   tabindex="-1"
                 >
@@ -266,8 +279,8 @@
               </div>
               <div class="elementor-icon-box-content">
                 <h3 class="elementor-icon-box-title">
-                  <a href="https://www.oodlesretreat.com/treatments/">
-                    TREATMENTS
+                  <a href="{% if entry.link %}{% pageurl entry.link %}{% endif %}">
+                    {{entry.title|upper}}
                   </a>
                 </h3>
               </div>
@@ -276,5 +289,7 @@
         </div>
       </div>
     </div>
+    {% endif %}
+    {% endfor %}
   </div>
 </section>

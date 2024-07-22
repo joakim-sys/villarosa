@@ -1,4 +1,4 @@
-{% load wagtailimages_tags %}
+{% load wagtailcore_tags wagtailimages_tags %}
 
 <section class="top-banner-wrap top-banner-sr">
   <p class="rs-p-wp-fix"></p>
@@ -76,7 +76,7 @@
                   data-frame_999_words="d:5;y:-130%;sX:1.3;sY:1.3;o:1;rZ:-15deg;"
                   data-frame_999_mask="u:t;"
                   style="z-index: 3; font-family: 'Poppins'">
-                  {{slide.value.title|safe}}
+                  <span style="font-weight: 200" >{{slide.value.title}}</span>
                 </rs-layer></rs-column
               ></rs-row
             ><rs-row
@@ -253,7 +253,7 @@
                   data-frame_999_words="d:5;y:-130%;sX:1.3;sY:1.3;o:1;rZ:-15deg;"
                   data-frame_999_mask="u:t;"
                   style="z-index: 3; font-family: 'Poppins'"
-                  >{{slide.value.title|safe}}
+                  ><span style="font-weight: 200" >{{slide.value.title}}</span>
                 </rs-layer></rs-column
               ></rs-row
             ><rs-row
@@ -427,7 +427,7 @@
                   data-frame_999_words="d:5;y:-130%;sX:1.3;sY:1.3;o:1;rZ:-15deg;"
                   data-frame_999_mask="u:t;"
                   style="z-index: 3; font-family: 'Poppins'"
-                  >{{slide.value.title|safe}}
+                  ><span style="font-weight: 200" >{{slide.value.title}}</span>
                 </rs-layer></rs-column
               ></rs-row
             ><rs-row

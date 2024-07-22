@@ -19,9 +19,14 @@ SECRET_KEY = "django-insecure-gh3g^^89%wbc@k3)t&sj&n83jnzhu-jlqptyin4x3n0gms%7u0
 # Application definition
 
 INSTALLED_APPS = [
+    'retreats',
+    'accomodation',
+    'services',
+    'locations',
     'base',
     "home",
     "search",
+    # 'wagtailmenus',
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
