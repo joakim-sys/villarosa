@@ -8,7 +8,6 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 DEVELOPMENT_MODE = os.environ.get('DEVELOPMENT_MODE',default=1)
 DEBUG = True
-ALLOWED_HOSTS = []
 
 INTERNAL_IPS = [
     "127.0.0.1",
