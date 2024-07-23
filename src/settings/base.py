@@ -125,9 +125,9 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'villarosadb',
-            'USER': 'uservillarosa',
-            'PASSWORD': 'villarosa_password',
+            'NAME': os.environ.get('DATABASE_NAME'),
+            'USER': os.environ.get('DATABASE_USER'),
+            'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
             'HOST': 'localhost',
             'PORT': '',
         }
