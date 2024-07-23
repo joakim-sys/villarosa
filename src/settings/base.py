@@ -6,6 +6,7 @@ PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 
+DEVELOPMENT_MODE = os.environ.get('DEVELOPMENT_MODE',default=1)
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -102,14 +103,33 @@ WSGI_APPLICATION = "src.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-if "DATABASE_URL" in os.environ:
-    DATABASES = {"default": dj_database_url.config(conn_max_age=500)}
+# if "DATABASE_URL" in os.environ:
+#     DATABASES = {"default": dj_database_url.config(conn_max_age=500)}
 
-else:
+# else:
+#     DATABASES = {
+#         "default": {
+#             "ENGINE": "django.db.backends.sqlite3",
+#             "NAME": os.path.join(BASE_DIR, "villarosadb"),
+#         }
+#     }
+
+if DEVELOPMENT_MODE:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
             "NAME": os.path.join(BASE_DIR, "villarosadb"),
+        }
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': 'villarosadb',
+            'USER': 'uservillarosa',
+            'PASSWORD': 'villarosa_password',
+            'HOST': 'localhost',
+            'PORT': '',
         }
     }
 
