@@ -1,9 +1,13 @@
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import dj_database_url
+from dotenv import load_dotenv
+
+load_dotenv() 
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
+
 
 
 DEVELOPMENT_MODE = os.environ.get('DEVELOPMENT_MODE',default=1)

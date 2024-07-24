@@ -1,8 +1,8 @@
 import os
 import random
 import string
-
 from .base import *
+
 
 DEBUG = False
 
