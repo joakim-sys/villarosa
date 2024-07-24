@@ -1,3 +1,5 @@
+{% load static navigation_tags wagtailcore_tags %}
+
 <!DOCTYPE html>
 <html
   lang="en-US"
@@ -10,242 +12,21 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <link rel="pingback" href="https://www.oodlesretreat.com/xmlrpc.php" />
+
     <title>Supermarkets &#8211; www.oodlesretreat.com</title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="dns-prefetch" href="//unpkg.com" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="www.oodlesretreat.com &raquo; Feed"
-      href="https://www.oodlesretreat.com/feed/"
-    />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title="www.oodlesretreat.com &raquo; Comments Feed"
-      href="https://www.oodlesretreat.com/comments/feed/"
-    />
+
     <meta property="og:title" content="Supermarkets" />
     <meta property="og:type" content="article" />
     <meta
       property="og:url"
       content="https://www.oodlesretreat.com/supermarkets/"
     />
-    <meta property="og:site_name" content="www.oodlesretreat.com" />
-    <meta property="og:image" content="http://example.com/image.jpg" />
-    <script type="text/javascript">
-      /* <![CDATA[ */
-      window._wpemojiSettings = {
-        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
-        ext: ".png",
-        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
-        svgExt: ".svg",
-        source: {
-          concatemoji:
-            "https:\/\/www.oodlesretreat.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.6",
-        },
-      };
-      /*! This file is auto-generated */
-      !(function (i, n) {
-        var o, s, e;
-        function c(e) {
-          try {
-            var t = { supportTests: e, timestamp: new Date().valueOf() };
-            sessionStorage.setItem(o, JSON.stringify(t));
-          } catch (e) {}
-        }
-        function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
-          var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-            ),
-            r =
-              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-              e.fillText(n, 0, 0),
-              new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
-              ));
-          return t.every(function (e, t) {
-            return e === r[t];
-          });
-        }
-        function u(e, t, n) {
-          switch (t) {
-            case "flag":
-              return n(
-                e,
-                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
-              )
-                ? !1
-                : !n(
-                    e,
-                    "\ud83c\uddfa\ud83c\uddf3",
-                    "\ud83c\uddfa\u200b\ud83c\uddf3"
-                  ) &&
-                    !n(
-                      e,
-                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
-                    );
-            case "emoji":
-              return !n(
-                e,
-                "\ud83d\udc26\u200d\u2b1b",
-                "\ud83d\udc26\u200b\u2b1b"
-              );
-          }
-          return !1;
-        }
-        function f(e, t, n) {
-          var r =
-              "undefined" != typeof WorkerGlobalScope &&
-              self instanceof WorkerGlobalScope
-                ? new OffscreenCanvas(300, 150)
-                : i.createElement("canvas"),
-            a = r.getContext("2d", { willReadFrequently: !0 }),
-            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
-          return (
-            e.forEach(function (e) {
-              o[e] = t(a, e, n);
-            }),
-            o
-          );
-        }
-        function t(e) {
-          var t = i.createElement("script");
-          (t.src = e), (t.defer = !0), i.head.appendChild(t);
-        }
-        "undefined" != typeof Promise &&
-          ((o = "wpEmojiSettingsSupports"),
-          (s = ["flag", "emoji"]),
-          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
-          (e = new Promise(function (e) {
-            i.addEventListener("DOMContentLoaded", e, { once: !0 });
-          })),
-          new Promise(function (t) {
-            var n = (function () {
-              try {
-                var e = JSON.parse(sessionStorage.getItem(o));
-                if (
-                  "object" == typeof e &&
-                  "number" == typeof e.timestamp &&
-                  new Date().valueOf() < e.timestamp + 604800 &&
-                  "object" == typeof e.supportTests
-                )
-                  return e.supportTests;
-              } catch (e) {}
-              return null;
-            })();
-            if (!n) {
-              if (
-                "undefined" != typeof Worker &&
-                "undefined" != typeof OffscreenCanvas &&
-                "undefined" != typeof URL &&
-                URL.createObjectURL &&
-                "undefined" != typeof Blob
-              )
-                try {
-                  var e =
-                      "postMessage(" +
-                      f.toString() +
-                      "(" +
-                      [JSON.stringify(s), u.toString(), p.toString()].join(
-                        ","
-                      ) +
-                      "));",
-                    r = new Blob([e], { type: "text/javascript" }),
-                    a = new Worker(URL.createObjectURL(r), {
-                      name: "wpTestEmojiSupports",
-                    });
-                  return void (a.onmessage = function (e) {
-                    c((n = e.data)), a.terminate(), t(n);
-                  });
-                } catch (e) {}
-              c((n = f(s, u, p)));
-            }
-            t(n);
-          })
-            .then(function (e) {
-              for (var t in e)
-                (n.supports[t] = e[t]),
-                  (n.supports.everything =
-                    n.supports.everything && n.supports[t]),
-                  "flag" !== t &&
-                    (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
-                n.supports.everythingExceptFlag && !n.supports.flag),
-                (n.DOMReady = !1),
-                (n.readyCallback = function () {
-                  n.DOMReady = !0;
-                });
-            })
-            .then(function () {
-              return e;
-            })
-            .then(function () {
-              var e;
-              n.supports.everything ||
-                (n.readyCallback(),
-                (e = n.source || {}).concatemoji
-                  ? t(e.concatemoji)
-                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
-            }));
-      })((window, document), window._wpemojiSettings);
-      /* ]]> */
-    </script>
-    <link
-      rel="stylesheet"
-      id="wpsbc-style-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/wp-simple-booking-calendar-premium/assets/css/style-front-end.min.css?ver=8.3.10"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="dashicons-css"
-      href="https://www.oodlesretreat.com/wp-includes/css/dashicons.min.css?ver=6.6"
-      type="text/css"
-      media="all"
-    />
-    <style id="wp-emoji-styles-inline-css" type="text/css">
-      img.wp-smiley,
-      img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 0.07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important;
-      }
-    </style>
-    <style id="classic-theme-styles-inline-css" type="text/css">
-      /*! This file is auto-generated */
-      .wp-block-button__link {
-        color: #fff;
-        background-color: #32373c;
-        border-radius: 9999px;
-        box-shadow: none;
-        text-decoration: none;
-        padding: calc(0.667em + 2px) calc(1.333em + 2px);
-        font-size: 1.125em;
-      }
-      .wp-block-file__button {
-        background: #32373c;
-        color: #fff;
-        text-decoration: none;
-      }
-    </style>
-    <style id="global-styles-inline-css" type="text/css">
+
+{% include "includes/style_one.html" %}    <style id="global-styles-inline-css" type="text/css">
       :root {
         --wp--preset--aspect-ratio--square: 1;
         --wp--preset--aspect-ratio--4-3: 4/3;
@@ -576,90 +357,6 @@
         line-height: 1.6;
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="contact-form-7-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.6"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="bootstrap-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/bootstrap.min.css?ver=3.3.7"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="bootstrap-select-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/bootstrap-select.min.css?ver=1.7.2"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="font-awesome-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="fancybox-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/fancybox-3.min.css?ver=3"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="slick-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/slick.css?ver=1.0.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="slick-theme-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/slick-theme.css?ver=1.0.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="jquery-ui-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/jquery-ui.css?ver=1.12.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="radio-checkbox-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/radio-checkbox.css?ver=1.0.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="homey-main-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/main.css?ver=2.1.1"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="homey-styling-options-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/styling-options.css?ver=2.1.1"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="homey-style-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/style.css?ver=2.1.1"
-      type="text/css"
-      media="all"
-    />
     <style id="homey-style-inline-css" type="text/css">
       body,
       address,
@@ -1436,41 +1133,9 @@
         }
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="radius_hide-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/css/hide_radius.min.css?ver=1.0.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="leaflet-css"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css?ver=1.7.1"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="leafletMarkerCluster-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/js/leafletCluster/MarkerCluster.css?ver=1.4.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="leafletMarkerClusterDefault-css"
-      href="https://www.oodlesretreat.com/wp-content/themes/homey/js/leafletCluster/MarkerCluster.Default.css?ver=1.4.0"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="elementor-frontend-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.21.8"
-      type="text/css"
-      media="all"
-    />
+
+
+
     <style id="elementor-frontend-inline-css" type="text/css">
       .elementor-kit-3548 {
         --e-global-color-primary: #021e2a;
@@ -3444,87 +3109,7 @@
         }
       }
     </style>
-    <link
-      rel="stylesheet"
-      id="swiper-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="elementor-pro-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.19.3"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="font-awesome-5-all-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.21.8"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="font-awesome-4-shim-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.21.8"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&#038;display=swap&#038;ver=1718728676"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&#038;display=swap&#038;ver=1718728676"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&#038;display=swap&#038;ver=1718728676"
-    /></noscript>
-    <link
-      rel="stylesheet"
-      id="google-fonts-1-css"
-      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6"
-      type="text/css"
-      media="all"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
-      id="jquery-core-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-      id="jquery-migrate-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js?ver=1.7.1"
-      id="leaflet-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-content/themes/homey/js/leafletCluster/leaflet.markercluster.js?ver=1.4.0"
-      id="leafletMarkerCluster-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.21.8"
-      id="font-awesome-4-shim-js"
-    ></script>
-    <link
-      rel="https://api.w.org/"
-      href="https://www.oodlesretreat.com/wp-json/"
-    />
+
     <link
       rel="alternate"
       title="JSON"
@@ -3537,7 +3122,7 @@
       title="RSD"
       href="https://www.oodlesretreat.com/xmlrpc.php?rsd"
     />
-    <meta name="generator" content="WordPress 6.6" />
+
     <link rel="canonical" href="https://www.oodlesretreat.com/supermarkets/" />
     <link rel="shortlink" href="https://www.oodlesretreat.com/?p=9349" />
     <link
@@ -3552,127 +3137,8 @@
       type="text/xml+oembed"
       href="https://www.oodlesretreat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oodlesretreat.com%2Fsupermarkets%2F&#038;format=xml"
     />
-    <meta name="generator" content="Redux 4.4.17" />
-    <link
-      rel="shortcut icon"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon.png"
-    />
-    <meta
-      name="generator"
-      content="Elementor 3.21.8; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-internal, google_font-enabled, font_display-auto"
-    />
-    <meta
-      name="generator"
-      content="Powered by Slider Revolution 6.6.12 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."
-    />
-    <link
-      rel="icon"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon-150x150.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon-250x250.png"
-      sizes="192x192"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon-250x250.png"
-    />
-    <meta
-      name="msapplication-TileImage"
-      content="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Favicon-300x300.png"
-    />
-    <script>
-      function setREVStartSize(e) {
-        //window.requestAnimationFrame(function() {
-        window.RSIW =
-          window.RSIW === undefined ? window.innerWidth : window.RSIW;
-        window.RSIH =
-          window.RSIH === undefined ? window.innerHeight : window.RSIH;
-        try {
-          var pw = document.getElementById(e.c).parentNode.offsetWidth,
-            newh;
-          pw =
-            pw === 0 ||
-            isNaN(pw) ||
-            e.l == "fullwidth" ||
-            e.layout == "fullwidth"
-              ? window.RSIW
-              : pw;
-          e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
-          e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
-          e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
-          e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
-          e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
-          e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
-          e.mh =
-            e.mh === undefined || e.mh == "" || e.mh === "auto"
-              ? 0
-              : parseInt(e.mh, 0);
-          if (e.layout === "fullscreen" || e.l === "fullscreen")
-            newh = Math.max(e.mh, window.RSIH);
-          else {
-            e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
-            for (var i in e.rl)
-              if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
-            e.gh =
-              e.el === undefined ||
-              e.el === "" ||
-              (Array.isArray(e.el) && e.el.length == 0)
-                ? e.gh
-                : e.el;
-            e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
-            for (var i in e.rl)
-              if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
 
-            var nl = new Array(e.rl.length),
-              ix = 0,
-              sl;
-            e.tabw = e.tabhide >= pw ? 0 : e.tabw;
-            e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
-            e.tabh = e.tabhide >= pw ? 0 : e.tabh;
-            e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
-            for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
-            sl = nl[0];
-            for (var i in nl)
-              if (sl > nl[i] && nl[i] > 0) {
-                sl = nl[i];
-                ix = i;
-              }
-            var m =
-              pw > e.gw[ix] + e.tabw + e.thumbw
-                ? 1
-                : (pw - (e.tabw + e.thumbw)) / e.gw[ix];
-            newh = e.gh[ix] * m + (e.tabh + e.thumbh);
-          }
-          var el = document.getElementById(e.c);
-          if (el !== null && el) el.style.height = newh + "px";
-          el = document.getElementById(e.c + "_wrapper");
-          if (el !== null && el) {
-            el.style.height = newh + "px";
-            el.style.display = "block";
-          }
-        } catch (e) {
-          console.log("Failure at Presize of Slider:" + e);
-        }
-        //});
-      }
-    </script>
+
     <style id="wpforms-css-vars-root">
       :root {
         --wpforms-field-border-radius: 3px;
@@ -4780,22 +4246,14 @@
                   data-widget_type="text-editor.default"
                 >
                   <div class="elementor-widget-container">
-                    <h1>
-                      <strong
-                        >Let&#8217;s chat about your next
-                        vacation&#8230;</strong
-                      >
-                    </h1>
-                    <h4>
-                      <strong>Address: </strong>Benissa, 03720 Alicante,
-                      Spain<br /><strong>Phone</strong>: (+34) 603 705 283<br /><strong
+{% get_footer_header %}                    <h4>
+                      <strong>Address: </strong>{{settings.base.GenericSettings.address}}<br /><strong>Phone</strong>: {{settings.base.GenericSettings.phone}}<br /><strong
                         >Email</strong
                       >:
                       <a
                         href="/cdn-cgi/l/email-protection"
-                        class="__cf_email__"
-                        data-cfemail="97fef9f1f8d7f8f8f3fbf2e4e5f2e3e5f2f6e3b9f4f8fa"
-                        >[email&#160;protected]</a
+"97fef9f1f8d7f8f8f3fbf2e4e5f2e3e5f2f6e3b9f4f8fa"
+                        >{{settings.base.GenericSettings.email}}</a
                       ><strong><br /></strong>
                     </h4>
                   </div>
@@ -4817,7 +4275,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://www.facebook.com/OodlesRetreat">
+                        <a href="{{settings.base.GenericSettings.facebook_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -4836,7 +4294,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://twitter.com/OodlesRetreat">
+                        <a href="{{settings.base.GenericSettings.twitter_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -4856,7 +4314,7 @@
                         class="elementor-icon-list-item elementor-inline-item"
                       >
                         <a
-                          href="https://es.linkedin.com/company/oodles-retreat"
+                          href="{{settings.base.GenericSettings.linkedin_url}}"
                         >
                           <span class="elementor-icon-list-icon">
                             <svg
@@ -4876,7 +4334,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://www.instagram.com/oodlesretreat/">
+                        <a href="{{settings.base.GenericSettings.instagram_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -4896,7 +4354,7 @@
                         class="elementor-icon-list-item elementor-inline-item"
                       >
                         <a
-                          href="https://www.youtube.com/channel/UCZ9t7pVG8Xb_TvIVjAGsWzw"
+                          href="{{settings.base.GenericSettings.youtube_url}}"
                         >
                           <span class="elementor-icon-list-icon">
                             <svg
@@ -4924,8 +4382,8 @@
                 >
                   <div class="elementor-widget-container">
                     <h2 class="elementor-heading-title elementor-size-default">
-                      <a href="https://www.oodlesretreat.com"
-                        >© Oodles Retreat. All Rights Reserved
+                      <a href="/"
+                        >© {{settings.base.SiteSettings.title_suffix}}. All Rights Reserved.
                       </a>
                     </h2>
                   </div>
@@ -4936,21 +4394,7 @@
         </section>
       </div>
     </div>
-    <footer class="footer-wrap footer">
-      <div class="footer-bottom-wrap">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div class="footer-copyright"></div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <div class="social-footer"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div
+{% include "includes/footer.html" %}    <div
       id="overlay-search-advanced-module"
       class="overlay-search-module overlay-search-advanced-module overlay-search-contentscale"
     >

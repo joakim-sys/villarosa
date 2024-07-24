@@ -1,0 +1,12 @@
+[Unit]
+Description=gunicorn daemon for villarosa project
+After=network.target
+
+[Service]
+User=wagtail
+Group=www-data
+WorkingDirectory=/home/wagtail/villarosa/src
+ExecStart=/home/wagtail/venv/bin/gunicorn --access-logfile - --workers 3 --bind unix:/home/wagtail/villarosa/myproject.sock src.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

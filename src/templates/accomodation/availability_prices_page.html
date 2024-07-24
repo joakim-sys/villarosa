@@ -13,8 +13,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="profile" href="https://gmpg.org/xfn/11" />
-    <link rel="pingback" href="https://www.oodlesretreat.com/xmlrpc.php" />
+
     <title>
         {% block title %}  {{page.title }}  {% endblock %} 
           
@@ -8084,7 +8083,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://www.facebook.com/OodlesRetreat">
+                        <a href="{{settings.base.GenericSettings.facebook_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -8103,7 +8102,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://twitter.com/OodlesRetreat">
+                        <a href="{{settings.base.GenericSettings.twitter_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -8123,7 +8122,7 @@
                         class="elementor-icon-list-item elementor-inline-item"
                       >
                         <a
-                          href="https://es.linkedin.com/company/oodles-retreat"
+                          href="{{settings.base.GenericSettings.linkedin_url}}"
                         >
                           <span class="elementor-icon-list-icon">
                             <svg
@@ -8143,7 +8142,7 @@
                       <li
                         class="elementor-icon-list-item elementor-inline-item"
                       >
-                        <a href="https://www.instagram.com/oodlesretreat/">
+                        <a href="{{settings.base.GenericSettings.instagram_url}}">
                           <span class="elementor-icon-list-icon">
                             <svg
                               aria-hidden="true"
@@ -8163,7 +8162,7 @@
                         class="elementor-icon-list-item elementor-inline-item"
                       >
                         <a
-                          href="https://www.youtube.com/channel/UCZ9t7pVG8Xb_TvIVjAGsWzw"
+                          href="{{settings.base.GenericSettings.youtube_url}}"
                         >
                           <span class="elementor-icon-list-icon">
                             <svg
@@ -8192,8 +8191,8 @@
                 >
                   <div class="elementor-widget-container">
                     <h2 class="elementor-heading-title elementor-size-default">
-                      <a href="https://www.oodlesretreat.com"
-                        >© Oodles Retreat. All Rights Reserved
+                      <a href="/"
+                        >© {{settings.base.SiteSettings.title_suffix}}. All Rights Reserved.
                       </a>
                     </h2>
                   </div>
