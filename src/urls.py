@@ -9,13 +9,13 @@ from wagtail.contrib.sitemaps.views import sitemap
 from wagtail.documents import urls as wagtaildocs_urls
 from wagtail.images.views.serve import ServeView
 
-from search import views as search_views
+# from search import views as search_views
 
 urlpatterns = [
     path("django-admin/", admin.site.urls),
     path("admin/", include(wagtailadmin_urls)),
     path("documents/", include(wagtaildocs_urls)),
-    path("search/", search_views.search, name="search"),
+    # path("search/", search_views.search, name="search"),
 
     re_path(
         r"^images/([^/]*)/(\d*)/([^/]*)/[^/]*$",
