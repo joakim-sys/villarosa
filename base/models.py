@@ -6,15 +6,53 @@ from wagtail.contrib.settings.models import (
     BaseSiteSetting,
     BaseGenericSetting,
 )
+from wagtail.contrib.forms.models import AbstractEmailForm, AbstractFormField
 from wagtail.admin.panels import (
     FieldPanel,
     PublishingPanel,
     MultiFieldPanel,
     InlinePanel,
+    FieldRowPanel
 )
+from wagtail.fields import RichTextField
 from modelcluster.models import ClusterableModel
 from modelcluster.fields import ParentalKey
 
+class FormField(AbstractFormField):
+    page = ParentalKey("FormPage", related_name="form_fields", on_delete=models.CASCADE)
+
+
+class FormPage(AbstractEmailForm):
+    introduction = models.TextField(null=True,blank=True)
+    thank_you_text = RichTextField()
+    body = RichTextField(blank=True)
+
+    content_panels = AbstractEmailForm.content_panels + [
+        FieldPanel("introduction"),
+        FieldPanel('body'),
+        InlinePanel("form_fields", heading="Form fields", label="Field"),
+        FieldPanel("thank_you_text"),
+        MultiFieldPanel(
+            [
+                FieldRowPanel(
+                    [
+                        FieldPanel("from_address"),
+                        FieldPanel("to_address"),
+                    ]
+                ),
+                FieldPanel("subject"),
+            ],
+            "Email",
+        ),
+    ]
+
+
+
+class StandardPage(Page):
+    body = RichTextField()
+    content_panels = Page.content_panels + [
+        FieldPanel('body')
+    ]
 
 @register_setting
 class SiteSettings(BaseSiteSetting):
@@ -34,6 +72,7 @@ class FooterHeader(models.Model):
 
     def __str__(self):
         return self.text
+
 
 
 class NavigationMenu(ClusterableModel):
@@ -110,30 +149,10 @@ class GenericSettings(ClusterableModel, BaseGenericSetting):
             [
                 FieldPanel("linkedin_url"),
                 FieldPanel("youtube_url"),
-                FieldPanel("instagram"),
+                FieldPanel("instagram_url"),
                 FieldPanel("x_url"),
                 FieldPanel("facebook_url"),
             ],
             "Social settings",
         ),
     ]
-
-
-class ActivitiesPage(Page):
-    template = "base/activities_page.html"
-
-
-class BoatTripsTours(Page):
-    template = "base/boat_trips_tours_page.html"
-
-
-class PrivacyPolicyPage(Page):
-    template = "base/privacy_policy_page.html"
-
-
-class ReviewsPage(Page):
-    template = "base/reviews.html"
-
-
-class TermsConditionsPage(Page):
-    template = "base/terms_conditions.html"

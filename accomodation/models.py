@@ -1,7 +1,7 @@
 from django.db import models
 from wagtail.models import Page, Collection, Orderable
 from wagtail.fields import StreamField, RichTextField
-from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel
+from wagtail.admin.panels import FieldPanel, MultiFieldPanel, InlinePanel, FieldRowPanel
 from wagtail.snippets.models import register_snippet
 from wagtail.documents.models import Document
 from modelcluster.fields import ParentalKey
@@ -223,7 +223,6 @@ class RoomType(models.Model):
         related_name="+",
     )
 
-
     panels = [
         FieldPanel("name"),
         FieldPanel("description"),
@@ -267,7 +266,7 @@ class Availability(models.Model):
     ]
 
     room_number = models.ForeignKey(
-        RoomNumber, on_delete=models.CASCADE, related_name="availabilities",null=True
+        RoomNumber, on_delete=models.CASCADE, related_name="availabilities", null=True
     )
     date = models.DateField()
     status = models.CharField(max_length=20, choices=STATUS_CHOICES)
@@ -386,5 +385,3 @@ class PricingOrderable(Orderable, models.Model):
 
     panels = [FieldPanel("pricing")]
 
-class GroupsPage(Page):
-    pass

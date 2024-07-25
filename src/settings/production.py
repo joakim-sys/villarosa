@@ -115,7 +115,8 @@ if ELASTICSEARCH_ENDPOINT:
             )
         )
 
-MIDDLEWARE.append("whitenoise.middleware.WhiteNoiseMiddleware")
+WHITENOISE_MANIFEST_STRICT = False
+MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 if "AWS_STORAGE_BUCKET_NAME" in os.environ:

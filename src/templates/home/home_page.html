@@ -6,7 +6,9 @@ template-homepage{% endblock %} {% comment %} {% block extra_css %}
 
 
   <div id="section-body" class="home page-template-default page page-id-3908 compare-property-active elementor-default elementor-template-full-width elementor-kit-3548 elementor-page elementor-page-3908">
+    {% if slide.carousel %}
     {% include 'sections/top-banner.html' %}
+    {% endif %}
     <div
       id="has_social_account"
       style="display: none"
@@ -49,7 +51,7 @@ template-homepage{% endblock %} {% comment %} {% block extra_css %}
       {% include 'sections/thick-divider.html' %}
 
       <!-- Displays icons with text underneath. These are links -->
-       {% include 'sections/icon-links.html' %}
+       {% comment %} {% include 'sections/icon-links.html' %} {% endcomment %}
 
       <!-- Appears just underneath the icons links. It has well styled text -->
        {% include 'sections/styled-text.html' %}

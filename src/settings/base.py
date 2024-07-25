@@ -1,16 +1,13 @@
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 import dj_database_url
-from dotenv import load_dotenv
-
-load_dotenv() 
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 
 
-DEVELOPMENT_MODE = os.environ.get('DEVELOPMENT_MODE',default=1)
+DEVELOPMENT_MODE = int(os.environ.get('DEVELOPMENT_MODE',default=1))
 DEBUG = True
 
 INTERNAL_IPS = [
@@ -23,12 +20,12 @@ SECRET_KEY = "django-insecure-gh3g^^89%wbc@k3)t&sj&n83jnzhu-jlqptyin4x3n0gms%7u0
 # Application definition
 
 INSTALLED_APPS = [
-    'retreats',
-    'accomodation',
-    'services',
-    'locations',
+    'villapages',
+    # 'accomodation',
     'base',
     "home",
+    # "crispy_forms",
+    # "crispy_bootstrap5",
     "search",
     # 'wagtailmenus',
     "wagtail.contrib.forms",
@@ -67,15 +64,15 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "django.middleware.security.SecurityMiddleware",
     "wagtail.contrib.redirects.middleware.RedirectMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
@@ -102,20 +99,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "src.wsgi.application"
 
-
-# Database
-# https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-
-# if "DATABASE_URL" in os.environ:
-#     DATABASES = {"default": dj_database_url.config(conn_max_age=500)}
-
-# else:
-#     DATABASES = {
-#         "default": {
-#             "ENGINE": "django.db.backends.sqlite3",
-#             "NAME": os.path.join(BASE_DIR, "villarosadb"),
-#         }
-#     }
 
 if DEVELOPMENT_MODE:
     DATABASES = {
@@ -265,3 +248,7 @@ if "CSP_DEFAULT_SRC" in os.environ:
         CSP_BASE_URI = os.environ.get("CSP_BASE_URI").split(",")
     if "CSP_OBJECT_SRC" in os.environ:
         CSP_OBJECT_SRC = os.environ.get("CSP_OBJECT_SRC").split(",")
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"

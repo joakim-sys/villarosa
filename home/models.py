@@ -109,10 +109,10 @@ class HomePage(Page):
             [FieldPanel("services_section_title"), InlinePanel("services", max_num=3)],
             heading="Services Section",
         ),
-        MultiFieldPanel(
-            [InlinePanel("icon_links", max_num=6)],
-            heading="Icon Links Section",
-        ),
+        # MultiFieldPanel(
+        #     [InlinePanel("icon_links", max_num=6)],
+        #     heading="Icon Links Section",
+        # ),
         MultiFieldPanel(
             [FieldPanel("styled_link_text"), FieldPanel("styled_link_text_link")],
             heading="Styled Link Section",

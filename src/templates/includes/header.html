@@ -14,11 +14,11 @@
             <a class="homey_logo" href="/">
               <img
                 src="{% static 'assets/wp-content/uploads/2023/01/Oodles-Retreat14.png' %}"
-                alt="www.oodlesretreat.com"
-                title="www.oodlesretreat.com - A place to discover new experiences"
+                title="A place to discover new experiences"
               />
             </a>
           </div>
+{% comment %} 
           <div class="header-comp-right no-cache-1721235185">
             <div class="account-login">
               <ul class="login-register list-inline">
@@ -30,6 +30,7 @@
               </ul>
             </div>
           </div>
+ {% endcomment %}
         </div>
       </div>
     </div>
@@ -112,8 +113,7 @@
               <a href="/">
                 <img
                   src="https://www.oodlesretreat.com/wp-content/uploads/2023/01/Oodles-Retreat15.png"
-                  alt="www.oodlesretreat.com"
-                  title="www.oodlesretreat.com - A place to discover new experiences"
+                  title="A place to discover new experiences"
                 />
               </a>
             </div>
@@ -185,6 +185,7 @@
             class="nav-dropdown main-nav-dropdown collapse navbar-collapse"
           >
             <ul>
+              {% comment "login" %}
               <li>
                 <a href="#" data-toggle="modal" data-target="#modal-login">
                   <span data-toggle="collapse" data-target="#user-nav"
@@ -192,6 +193,7 @@
                   >
                 </a>
               </li>
+              {% endcomment %}
             </ul>
           </nav>
         </div>

@@ -367,11 +367,12 @@
           data-element_type="widget"
           data-widget_type="button.default"
         >
+        {% if page.introduction_cta_link %}
           <div class="elementor-widget-container">
             <div class="elementor-button-wrapper">
               <a
                 class="elementor-button elementor-button-link elementor-size-sm"
-                href="{% if page.introduction_cta_link %}{% pageurl page.introduction_cta_link %}{% else %}#{% endif %}"
+                href="{% pageurl page.introduction_cta_link %}"
               >
                 <span class="elementor-button-content-wrapper">
                   <span class="elementor-button-text"
@@ -381,6 +382,8 @@
               </a>
             </div>
           </div>
+          {% endif %}
+
         </div>
         <div
           class="elementor-element elementor-element-7c815170 elementor-widget elementor-widget-spacer"

@@ -1,4 +1,5 @@
-{% load static navigation_tags wagtailcore_tags wagtailimages_tags %}
+{% load wagtailcore_tags navigation_tags %}
+
 <!DOCTYPE html>
 <html
   lang="en-US"
@@ -12,20 +13,13 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
 
-    <title>Retreat Accommodation &#8211; www.oodlesretreat.com</title>
+    <title>{{page.title}}</title>
     <meta name="robots" content="max-image-preview:large" />
-    <link rel="dns-prefetch" href="//unpkg.com" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <meta property="og:title" content="Retreat Accommodation" />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://www.oodlesretreat.com/retreat-accommodation/"
-    />
-
-{% include "includes/style_one.html" %}    <style id="global-styles-inline-css" type="text/css">
+{% include "includes/style_one.html" %} 
+   <style id="global-styles-inline-css" type="text/css">
       :root {
         --wp--preset--aspect-ratio--square: 1;
         --wp--preset--aspect-ratio--4-3: 4/3;
@@ -2248,904 +2242,91 @@
       .elementor-widget-mega-menu {
         --n-menu-divider-color: var(--e-global-color-text);
       }
-      .elementor-8175
-        .elementor-element.elementor-element-36f7f37f
-        > .elementor-container {
-        min-height: 400px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-36f7f37f:not(
+      .elementor-3469
+        .elementor-element.elementor-element-76ce868c:not(
           .elementor-motion-effects-element-type-background
         ),
-      .elementor-8175
-        .elementor-element.elementor-element-36f7f37f
+      .elementor-3469
+        .elementor-element.elementor-element-76ce868c
         > .elementor-motion-effects-container
         > .elementor-motion-effects-layer {
-        background-image: url("https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-9.jpg");
-        background-position: bottom center;
-        background-size: cover;
+        background-color: #ffffff;
       }
-      .elementor-8175 .elementor-element.elementor-element-36f7f37f {
+      .elementor-3469 .elementor-element.elementor-element-76ce868c {
         transition: background 0.3s, border 0.3s, border-radius 0.3s,
           box-shadow 0.3s;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        z-index: 1;
+      }
+      .elementor-3469
+        .elementor-element.elementor-element-76ce868c
+        > .elementor-background-overlay {
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      }
+      .elementor-3469
+        .elementor-element.elementor-element-7edd375e
+        > .elementor-element-populated {
+        box-shadow: 0px 30px 60px 0px rgba(0, 0, 0, 0.16);
+        transition: background 0.3s, border 0.3s, border-radius 0.3s,
+          box-shadow 0.3s;
+        padding: 60px 60px 60px 60px;
+      }
+      .elementor-3469
+        .elementor-element.elementor-element-7edd375e
+        > .elementor-element-populated
+        > .elementor-background-overlay {
+        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+      }
+      .elementor-3469 .elementor-element.elementor-element-7edd375e {
+        z-index: 1;
+      }
+      .elementor-3469 .elementor-element.elementor-element-33785ef3 {
+        text-align: left;
         z-index: 2;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-36f7f37f
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-36f7f37f
-        > .elementor-shape-bottom
-        svg {
-        height: 40px;
-        transform: translateX(-50%) rotateY(180deg);
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-6f65b56c
-        > .elementor-container {
-        max-width: 1211px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-6f65b56c:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-6f65b56c
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #ffffff;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-6f65b56c
-        > .elementor-background-overlay {
-        opacity: 0.5;
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-6f65b56c {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-2c915997 {
-        --spacer-size: 50px;
-      }
-      .elementor-8175 .elementor-element.elementor-element-1e23f0f7 {
-        text-align: center;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-1e23f0f7
+      .elementor-3469
+        .elementor-element.elementor-element-33785ef3
         .elementor-heading-title {
         color: #3b4249;
         font-family: "Playfair Display", Sans-serif;
-        font-size: 40px;
-        font-weight: 400;
+        font-weight: 300;
+        line-height: 1px;
       }
-      .elementor-8175 .elementor-element.elementor-element-33648543 {
+      .elementor-3469 .elementor-element.elementor-element-609410d9 {
         --divider-border-style: solid;
-        --divider-color: #5b8b8b;
+        --divider-color: var(--e-global-color-accent);
         --divider-border-width: 2px;
+        z-index: 2;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-33648543
+      .elementor-3469
+        .elementor-element.elementor-element-609410d9
         .elementor-divider-separator {
         width: 10%;
         margin: 0 auto;
-        margin-center: 0;
+        margin-left: 0;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-33648543
+      .elementor-3469
+        .elementor-element.elementor-element-609410d9
         .elementor-divider {
-        text-align: center;
+        text-align: left;
         padding-block-start: 15px;
         padding-block-end: 15px;
       }
-      .elementor-8175 .elementor-element.elementor-element-53b27c6b {
-        text-align: center;
-        font-family: "Roboto", Sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 30px;
+      .elementor-3469 .elementor-element.elementor-element-4399144d {
+        z-index: 2;
       }
-      .elementor-8175 .elementor-element.elementor-element-19b9daed {
-        --display: flex;
-        --min-height: 74vh;
-        --flex-direction: row;
-        --container-widget-width: calc(
-          (1 - var(--container-widget-flex-grow)) * 100%
-        );
-        --container-widget-height: 100%;
-        --container-widget-flex-grow: 1;
-        --container-widget-align-self: stretch;
-        --align-items: stretch;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        --overlay-opacity: 0.5;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        --padding-top: 5%;
-        --padding-bottom: 5%;
-        --padding-left: 0%;
-        --padding-right: 0%;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #5b8b8b;
-      }
-      .elementor-8175 .elementor-element.elementor-element-19b9daed::before,
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .elementor-background-video-container::before,
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .e-con-inner
-        > .elementor-background-video-container::before,
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .elementor-background-slideshow::before,
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .e-con-inner
-        > .elementor-background-slideshow::before,
-      .elementor-8175
-        .elementor-element.elementor-element-19b9daed
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer::before {
-        --background-overlay: "";
-      }
-      .elementor-8175 .elementor-element.elementor-element-19b9daed,
-      .elementor-8175 .elementor-element.elementor-element-19b9daed::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-1001af4 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        border-style: solid;
-        --border-style: solid;
-        border-width: 0px 0px 1px 0px;
-        --border-top-width: 0px;
-        --border-right-width: 0px;
-        --border-bottom-width: 1px;
-        --border-left-width: 0px;
-        border-color: #f0f0f0;
-        --border-color: #f0f0f0;
-        --padding-top: 0px;
-        --padding-bottom: 0px;
-        --padding-left: 0px;
-        --padding-right: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-1001af4:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-1001af4
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-image: url("https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-2.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .elementor-8175 .elementor-element.elementor-element-1001af4,
-      .elementor-8175 .elementor-element.elementor-element-1001af4::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-9d54f8 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: calc(
-          (1 - var(--container-widget-flex-grow)) * 100%
-        );
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --justify-content: center;
-        --align-items: center;
-        --gap: 50px 50px;
-        --flex-wrap: wrap;
-        --background-transition: 0.3s;
-        border-style: solid;
-        --border-style: solid;
-        border-width: 1px 0px 1px 0px;
-        --border-top-width: 1px;
-        --border-right-width: 0px;
-        --border-bottom-width: 1px;
-        --border-left-width: 0px;
-        border-color: #f0f0f0;
-        --border-color: #f0f0f0;
-        --padding-top: 0%;
-        --padding-bottom: 0%;
-        --padding-left: 0%;
-        --padding-right: 0%;
-      }
-      .elementor-8175 .elementor-element.elementor-element-9d54f8,
-      .elementor-8175 .elementor-element.elementor-element-9d54f8::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-4a3ce588 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --gap: 20px 20px;
-        --background-transition: 0.3s;
-        --padding-top: 0%;
-        --padding-bottom: 0%;
-        --padding-left: 20%;
-        --padding-right: 20%;
-      }
-      .elementor-8175 .elementor-element.elementor-element-31b372f {
+      .elementor-3469 .elementor-element.elementor-element-4086a008 {
+        columns: 1;
         text-align: left;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-31b372f
-        .elementor-heading-title {
-        color: #f0f0f0;
-        font-family: "Playfair Display", Sans-serif;
-        font-size: 50px;
-        font-weight: 600;
-        text-transform: none;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 1.1em;
-        letter-spacing: 0.3px;
-        word-spacing: 0em;
-      }
-      .elementor-8175 .elementor-element.elementor-element-3b721a3b {
-        text-align: left;
-        color: #f0f0f0;
-        font-family: "Roboto", Sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        text-transform: none;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 1.5em;
-        letter-spacing: 1px;
-        word-spacing: 0em;
-      }
-      .elementor-8175 .elementor-element.elementor-element-51b67d4 {
-        --display: flex;
-        --background-transition: 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-c864598
-        .elementor-icon-list-icon
-        i {
-        color: #ffffff;
-        transition: color 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-c864598
-        .elementor-icon-list-icon
-        svg {
-        fill: #ffffff;
-        transition: fill 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-c864598 {
-        --e-icon-list-icon-size: 14px;
-        --icon-vertical-offset: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-c864598
-        .elementor-icon-list-text {
-        color: #ffffff;
-        transition: color 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-31a76f3 {
-        --spacer-size: 10px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-03c2b76
-        .elementor-heading-title {
-        color: #ffffff;
-      }
-      .elementor-8175 .elementor-element.elementor-element-ff8ab99 {
-        color: #ffffff;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-780d07b
-        .elementor-button {
-        background-color: #91bcbc;
-      }
-      .elementor-8175 .elementor-element.elementor-element-e088762 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        border-style: solid;
-        --border-style: solid;
-        border-width: 0px 0px 1px 0px;
-        --border-top-width: 0px;
-        --border-right-width: 0px;
-        --border-bottom-width: 1px;
-        --border-left-width: 0px;
-        border-color: #f0f0f0;
-        --border-color: #f0f0f0;
-        --padding-top: 0px;
-        --padding-bottom: 0px;
-        --padding-left: 0px;
-        --padding-right: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-e088762:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-e088762
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-image: url("https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-4.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .elementor-8175 .elementor-element.elementor-element-e088762,
-      .elementor-8175 .elementor-element.elementor-element-e088762::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-d0cd22d {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --background-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-d0cd22d,
-      .elementor-8175 .elementor-element.elementor-element-d0cd22d::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-de31cac {
-        --image-transition-duration: 800ms;
-        --overlay-transition-duration: 800ms;
-        --content-text-align: center;
-        --content-padding: 20px;
-        --content-transition-duration: 800ms;
-        --content-transition-delay: 800ms;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-de31cac
-        .e-gallery-item:hover
-        .elementor-gallery-item__overlay,
-      .elementor-8175
-        .elementor-element.elementor-element-de31cac
-        .e-gallery-item:focus
-        .elementor-gallery-item__overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-323f7f51
-        > .elementor-container {
-        min-height: 600px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-323f7f51
-        > .elementor-container
-        > .elementor-column
-        > .elementor-widget-wrap {
-        align-content: center;
-        align-items: center;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-323f7f51:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-323f7f51
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #ffffff;
-      }
-      .elementor-8175 .elementor-element.elementor-element-323f7f51 {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-323f7f51
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-3260d407
-        > .elementor-element-populated {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-3260d407
-        > .elementor-element-populated
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4117ab8a:not(
-          .elementor-motion-effects-element-type-background
-        )
-        > .elementor-widget-wrap,
-      .elementor-8175
-        .elementor-element.elementor-element-4117ab8a
-        > .elementor-widget-wrap
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #00000000;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4117ab8a
-        > .elementor-element-populated {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-        padding: 0px 50px 0px 50px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4117ab8a
-        > .elementor-element-populated
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-aa80890 {
-        text-align: center;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-aa80890
-        .elementor-heading-title {
-        color: #3b4249;
-        font-family: "Playfair Display", Sans-serif;
-        font-size: 50px;
-        font-weight: 400;
-      }
-      .elementor-8175 .elementor-element.elementor-element-5c52038c {
-        --divider-border-style: solid;
-        --divider-color: #5b8b8b;
-        --divider-border-width: 2px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-5c52038c
-        .elementor-divider-separator {
-        width: 10%;
-        margin: 0 auto;
-        margin-center: 0;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-5c52038c
-        .elementor-divider {
-        text-align: center;
-        padding-block-start: 15px;
-        padding-block-end: 15px;
-      }
-      .elementor-8175 .elementor-element.elementor-element-6fe2f40c {
-        text-align: center;
-        color: #3b4249;
-        font-family: "Roboto", Sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 30px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-6fe2f40c
-        > .elementor-widget-container {
-        margin: 0px 0px 0px 0px;
-      }
-      .elementor-8175 .elementor-element.elementor-element-88c5939 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --background-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-88c5939,
-      .elementor-8175 .elementor-element.elementor-element-88c5939::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-6b84a90 {
-        --image-transition-duration: 800ms;
-        --overlay-transition-duration: 800ms;
-        --content-text-align: center;
-        --content-padding: 20px;
-        --content-transition-duration: 800ms;
-        --content-transition-delay: 800ms;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-6b84a90
-        .e-gallery-item:hover
-        .elementor-gallery-item__overlay,
-      .elementor-8175
-        .elementor-element.elementor-element-6b84a90
-        .e-gallery-item:focus
-        .elementor-gallery-item__overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      .elementor-8175 .elementor-element.elementor-element-26c3e4f {
-        --display: flex;
-        --min-height: 55vh;
-        --flex-direction: row;
-        --container-widget-width: calc(
-          (1 - var(--container-widget-flex-grow)) * 100%
-        );
-        --container-widget-height: 100%;
-        --container-widget-flex-grow: 1;
-        --container-widget-align-self: stretch;
-        --align-items: stretch;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        --overlay-opacity: 0.5;
-        --padding-top: 5%;
-        --padding-bottom: 5%;
-        --padding-left: 0%;
-        --padding-right: 0%;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f:not(
-          .elementor-motion-effects-element-type-background
-        ),
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #5b8b8b;
-      }
-      .elementor-8175 .elementor-element.elementor-element-26c3e4f::before,
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .elementor-background-video-container::before,
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .e-con-inner
-        > .elementor-background-video-container::before,
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .elementor-background-slideshow::before,
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .e-con-inner
-        > .elementor-background-slideshow::before,
-      .elementor-8175
-        .elementor-element.elementor-element-26c3e4f
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer::before {
-        --background-overlay: "";
-      }
-      .elementor-8175 .elementor-element.elementor-element-26c3e4f,
-      .elementor-8175 .elementor-element.elementor-element-26c3e4f::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-5ccaf295 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        --padding-top: 0px;
-        --padding-bottom: 0px;
-        --padding-left: 0px;
-        --padding-right: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-1c7e6050
-        .elementor-cta__content {
-        text-align: left;
-        background-color: #495338;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-1c7e6050
-        .elementor-cta__bg-wrapper {
-        min-width: 100%;
-        min-height: 55vh;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-1c7e6050
-        .elementor-cta
-        .elementor-cta__bg,
-      .elementor-8175
-        .elementor-element.elementor-element-1c7e6050
-        .elementor-cta
-        .elementor-cta__bg-overlay {
-        transition-duration: 1500ms;
-      }
-      .elementor-8175 .elementor-element.elementor-element-792e2972 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --justify-content: center;
-        --gap: 50px 50px;
-        --background-transition: 0.3s;
-        border-style: solid;
-        --border-style: solid;
-        border-width: 1px 1px 1px 1px;
-        --border-top-width: 1px;
-        --border-right-width: 1px;
-        --border-bottom-width: 1px;
-        --border-left-width: 1px;
-        border-color: #f0f0f0;
-        --border-color: #f0f0f0;
-        --padding-top: 0%;
-        --padding-bottom: 0%;
-        --padding-left: 5%;
-        --padding-right: 5%;
-      }
-      .elementor-8175 .elementor-element.elementor-element-792e2972,
-      .elementor-8175 .elementor-element.elementor-element-792e2972::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-7ca55d0b {
-        text-align: center;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-7ca55d0b
-        .elementor-heading-title {
-        color: #f0f0f0;
-        font-family: "Playfair Display", Sans-serif;
-        font-size: 2.9vw;
-        font-weight: 600;
-        text-transform: none;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 1.1em;
-        letter-spacing: -0.28px;
-        word-spacing: 0em;
-      }
-      .elementor-8175 .elementor-element.elementor-element-aebb7cf {
-        text-align: center;
-        color: #f0f0f0;
-        font-family: "Roboto", Sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        text-transform: none;
-        font-style: normal;
-        text-decoration: none;
-        line-height: 1.5em;
-        letter-spacing: 1px;
-        word-spacing: 0em;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-f61e494
-        .elementor-icon-list-icon
-        i {
-        color: #ffffff;
-        transition: color 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-f61e494
-        .elementor-icon-list-icon
-        svg {
-        fill: #ffffff;
-        transition: fill 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-f61e494 {
-        --e-icon-list-icon-size: 14px;
-        --icon-vertical-offset: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-f61e494
-        .elementor-icon-list-text {
-        color: #ffffff;
-        transition: color 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-58c933f
-        .elementor-button {
-        background-color: #91bcbc;
-      }
-      .elementor-8175 .elementor-element.elementor-element-68630d47 {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --gap: 0px 0px;
-        --background-transition: 0.3s;
-        --padding-top: 0px;
-        --padding-bottom: 0px;
-        --padding-left: 0px;
-        --padding-right: 0px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-128cc15b
-        .elementor-cta__content {
-        text-align: left;
-        background-color: #495338;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-128cc15b
-        .elementor-cta__bg-wrapper {
-        min-width: 100%;
-        min-height: 55vh;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-128cc15b
-        .elementor-cta
-        .elementor-cta__bg,
-      .elementor-8175
-        .elementor-element.elementor-element-128cc15b
-        .elementor-cta
-        .elementor-cta__bg-overlay {
-        transition-duration: 1500ms;
-      }
-      .elementor-8175 .elementor-element.elementor-element-bb11dee {
-        --display: flex;
-        --flex-direction: column;
-        --container-widget-width: 100%;
-        --container-widget-height: initial;
-        --container-widget-flex-grow: 0;
-        --container-widget-align-self: initial;
-        --background-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-bb11dee,
-      .elementor-8175 .elementor-element.elementor-element-bb11dee::before {
-        --border-transition: 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-28d2788 {
-        --image-transition-duration: 800ms;
-        --overlay-transition-duration: 800ms;
-        --content-text-align: center;
-        --content-padding: 20px;
-        --content-transition-duration: 800ms;
-        --content-transition-delay: 800ms;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-28d2788
-        .e-gallery-item:hover
-        .elementor-gallery-item__overlay,
-      .elementor-8175
-        .elementor-element.elementor-element-28d2788
-        .e-gallery-item:focus
-        .elementor-gallery-item__overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-3f4fbfff
-        > .elementor-container {
-        min-height: 600px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-3f4fbfff
-        > .elementor-container
-        > .elementor-column
-        > .elementor-widget-wrap {
-        align-content: center;
-        align-items: center;
-      }
-      .elementor-8175 .elementor-element.elementor-element-3f4fbfff {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-3f4fbfff
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4747a653:not(
-          .elementor-motion-effects-element-type-background
-        )
-        > .elementor-widget-wrap,
-      .elementor-8175
-        .elementor-element.elementor-element-4747a653
-        > .elementor-widget-wrap
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-color: #ffffff;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4747a653
-        > .elementor-element-populated {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-        padding: 0px 50px 0px 50px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-4747a653
-        > .elementor-element-populated
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175 .elementor-element.elementor-element-52381508 {
-        text-align: center;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-52381508
-        .elementor-heading-title {
-        color: #3b4249;
-        font-family: "Playfair Display", Sans-serif;
-        font-size: 50px;
-        font-weight: 400;
-      }
-      .elementor-8175 .elementor-element.elementor-element-1413c98 {
-        text-align: center;
-        color: #5b8b8b;
-        font-family: "Dancing Script", Sans-serif;
-        font-size: 30px;
-        font-weight: 400;
-      }
-      .elementor-8175 .elementor-element.elementor-element-28d755b9 {
-        --divider-border-style: solid;
-        --divider-color: #5b8b8b;
-        --divider-border-width: 2px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-28d755b9
-        .elementor-divider-separator {
-        width: 10%;
-        margin: 0 auto;
-        margin-center: 0;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-28d755b9
-        .elementor-divider {
-        text-align: center;
-        padding-block-start: 2px;
-        padding-block-end: 2px;
-      }
-      .elementor-8175 .elementor-element.elementor-element-5fb14673 {
-        text-align: center;
-        color: #3b4249;
-        font-family: "Roboto", Sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 30px;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-200b3998:not(
-          .elementor-motion-effects-element-type-background
-        )
-        > .elementor-widget-wrap,
-      .elementor-8175
-        .elementor-element.elementor-element-200b3998
-        > .elementor-widget-wrap
-        > .elementor-motion-effects-container
-        > .elementor-motion-effects-layer {
-        background-image: url("https://www.oodlesretreat.com/wp-content/uploads/2023/01/CASITA-INTERIOR-1.jpg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-200b3998
-        > .elementor-element-populated {
-        transition: background 0.3s, border 0.3s, border-radius 0.3s,
-          box-shadow 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-200b3998
-        > .elementor-element-populated
-        > .elementor-background-overlay {
-        transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-      }
-      .elementor-8175
-        .elementor-element.elementor-element-38c24132
+      .elementor-3469
+        .elementor-element.elementor-element-1697afde
         > .elementor-container {
         max-width: 1400px;
         min-height: 385px;
       }
-      .elementor-8175 .elementor-element.elementor-element-38c24132 {
+      .elementor-3469 .elementor-element.elementor-element-1697afde {
         overflow: hidden;
         border-style: solid;
         border-width: 0px 0px 0px 10px;
@@ -3153,18 +2334,18 @@
         transition: background 0.3s, border 0.3s, border-radius 0.3s,
           box-shadow 0.3s;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-38c24132:not(
+      .elementor-3469
+        .elementor-element.elementor-element-1697afde:not(
           .elementor-motion-effects-element-type-background
         ),
-      .elementor-8175
-        .elementor-element.elementor-element-38c24132
+      .elementor-3469
+        .elementor-element.elementor-element-1697afde
         > .elementor-motion-effects-container
         > .elementor-motion-effects-layer {
         background-color: #5b8b8b;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-38c24132
+      .elementor-3469
+        .elementor-element.elementor-element-1697afde
         > .elementor-background-overlay {
         background-image: url("https://www.oodlesretreat.com/wp-content/uploads/2023/01/Footer-BG.png");
         background-position: center center;
@@ -3174,31 +2355,31 @@
         transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
       }
       .elementor-bc-flex-widget
-        .elementor-8175
-        .elementor-element.elementor-element-624c4d38.elementor-column
+        .elementor-3469
+        .elementor-element.elementor-element-16f01a38.elementor-column
         .elementor-widget-wrap {
         align-items: center;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-624c4d38.elementor-column.elementor-element[data-element_type="column"]
+      .elementor-3469
+        .elementor-element.elementor-element-16f01a38.elementor-column.elementor-element[data-element_type="column"]
         > .elementor-widget-wrap.elementor-element-populated {
         align-content: center;
         align-items: center;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-624c4d38
+      .elementor-3469
+        .elementor-element.elementor-element-16f01a38
         > .elementor-widget-wrap
         > .elementor-widget:not(.elementor-widget__width-auto):not(
           .elementor-widget__width-initial
         ):not(:last-child):not(.elementor-absolute) {
         margin-bottom: 45px;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-624c4d38
+      .elementor-3469
+        .elementor-element.elementor-element-16f01a38
         > .elementor-element-populated {
         padding: 0px 0px 0px 0px;
       }
-      .elementor-8175 .elementor-element.elementor-element-e97f9b3 {
+      .elementor-3469 .elementor-element.elementor-element-74319ea9 {
         color: #ffffff;
         font-family: "Roboto", Sans-serif;
         font-size: 15px;
@@ -3206,454 +2387,169 @@
         line-height: 30px;
         text-shadow: 0px 0px 0px #ffffff;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-e97f9b3
+      .elementor-3469
+        .elementor-element.elementor-element-74319ea9
         > .elementor-widget-container {
         margin: 16px 0px 0px 0px;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items:not(.elementor-inline-items)
         .elementor-icon-list-item:not(:last-child) {
         padding-bottom: calc(35px / 2);
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items:not(.elementor-inline-items)
         .elementor-icon-list-item:not(:first-child) {
         margin-top: calc(35px / 2);
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items.elementor-inline-items
         .elementor-icon-list-item {
         margin-right: calc(35px / 2);
         margin-left: calc(35px / 2);
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items.elementor-inline-items {
         margin-right: calc(-35px / 2);
         margin-left: calc(-35px / 2);
       }
       body.rtl
-        .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+        .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items.elementor-inline-items
         .elementor-icon-list-item:after {
         left: calc(-35px / 2);
       }
       body:not(.rtl)
-        .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+        .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-items.elementor-inline-items
         .elementor-icon-list-item:after {
         right: calc(-35px / 2);
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-icon
         i {
         color: #ffffff;
         transition: color 0.3s;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-icon
         svg {
         fill: #ffffff;
         transition: fill 0.3s;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-item:hover
         .elementor-icon-list-icon
         i {
         color: #635dff;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-item:hover
         .elementor-icon-list-icon
         svg {
         fill: #635dff;
       }
-      .elementor-8175 .elementor-element.elementor-element-4d91f347 {
+      .elementor-3469 .elementor-element.elementor-element-57bce505 {
         --e-icon-list-icon-size: 20px;
         --e-icon-list-icon-align: left;
         --e-icon-list-icon-margin: 0
           calc(var(--e-icon-list-icon-size, 1em) * 0.25) 0 0;
         --icon-vertical-offset: 0px;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         .elementor-icon-list-text {
         transition: color 0.3s;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-4d91f347
+      .elementor-3469
+        .elementor-element.elementor-element-57bce505
         > .elementor-widget-container {
         margin: 0px 0px 0px 0px;
       }
-      .elementor-8175
-        .elementor-element.elementor-element-52352740
+      .elementor-3469
+        .elementor-element.elementor-element-679ec84c
         .elementor-heading-title {
         color: #ffffff;
         font-family: "Montserrat", Sans-serif;
         font-size: 12px;
         font-weight: 200;
       }
+      @media (max-width: 1024px) and (min-width: 768px) {
+        .elementor-3469 .elementor-element.elementor-element-16f01a38 {
+          width: 40%;
+        }
+      }
       @media (max-width: 1024px) {
-        .elementor-8175
-          .elementor-element.elementor-element-1e23f0f7
-          .elementor-heading-title {
-          font-size: 30px;
+        .elementor-3469
+          .elementor-element.elementor-element-7edd375e
+          > .elementor-element-populated {
+          padding: 40px 40px 40px 40px;
         }
-        .elementor-8175 .elementor-element.elementor-element-19b9daed {
-          --min-height: 0vh;
-          --flex-direction: column;
-          --container-widget-width: 100%;
-          --container-widget-height: initial;
-          --container-widget-flex-grow: 0;
-          --container-widget-align-self: initial;
-          --padding-top: 5%;
-          --padding-bottom: 5%;
-          --padding-left: 0%;
-          --padding-right: 0%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-1001af4 {
-          --min-height: 50vh;
-        }
-        .elementor-8175 .elementor-element.elementor-element-9d54f8 {
-          --min-height: 50vh;
-          --justify-content: center;
-          --align-items: center;
-          --container-widget-width: calc(
-            (1 - var(--container-widget-flex-grow)) * 100%
-          );
-          --gap: 30px 30px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-4a3ce588 {
-          --padding-top: 0%;
-          --padding-bottom: 0%;
-          --padding-left: 10%;
-          --padding-right: 10%;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-31b372f
-          .elementor-heading-title {
-          font-size: 50px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-e088762 {
-          --min-height: 50vh;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-e088762:not(
-            .elementor-motion-effects-element-type-background
-          ),
-        .elementor-8175
-          .elementor-element.elementor-element-e088762
-          > .elementor-motion-effects-container
-          > .elementor-motion-effects-layer {
-          background-position: center right;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-aa80890
-          .elementor-heading-title {
-          font-size: 30px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-26c3e4f {
-          --min-height: 45vh;
-          --flex-direction: row;
-          --container-widget-width: initial;
-          --container-widget-height: 100%;
-          --container-widget-flex-grow: 1;
-          --container-widget-align-self: stretch;
-          --padding-top: 5%;
-          --padding-bottom: 5%;
-          --padding-left: 0%;
-          --padding-right: 0%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-792e2972 {
-          --padding-top: 5%;
-          --padding-bottom: 5%;
-          --padding-left: 5%;
-          --padding-right: 5%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-7ca55d0b {
-          text-align: center;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-7ca55d0b
-          .elementor-heading-title {
-          font-size: 35px;
-          line-height: 1.1em;
-          letter-spacing: 0px;
-          word-spacing: 0em;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-52381508
-          .elementor-heading-title {
-          font-size: 30px;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-38c24132
+        .elementor-3469
+          .elementor-element.elementor-element-1697afde
           > .elementor-container {
           min-height: 300px;
         }
-        .elementor-8175 .elementor-element.elementor-element-38c24132 {
+        .elementor-3469 .elementor-element.elementor-element-1697afde {
           padding: 0% 5% 0% 5%;
         }
-        .elementor-8175
-          .elementor-element.elementor-element-624c4d38
+        .elementor-3469
+          .elementor-element.elementor-element-16f01a38
           > .elementor-widget-wrap
           > .elementor-widget:not(.elementor-widget__width-auto):not(
             .elementor-widget__width-initial
           ):not(:last-child):not(.elementor-absolute) {
           margin-bottom: 50px;
         }
-        .elementor-8175
-          .elementor-element.elementor-element-624c4d38
+        .elementor-3469
+          .elementor-element.elementor-element-16f01a38
           > .elementor-element-populated {
           padding: 0px 50px 0px 0px;
         }
-        .elementor-8175 .elementor-element.elementor-element-e97f9b3 {
+        .elementor-3469 .elementor-element.elementor-element-74319ea9 {
           font-size: 30px;
         }
-        .elementor-8175
-          .elementor-element.elementor-element-52352740
+        .elementor-3469
+          .elementor-element.elementor-element-679ec84c
           .elementor-heading-title {
           line-height: 1.4em;
         }
       }
       @media (max-width: 767px) {
-        .elementor-8175 .elementor-element.elementor-element-19b9daed {
-          --padding-top: 0%;
-          --padding-bottom: 0%;
-          --padding-left: 0%;
-          --padding-right: 0%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-1001af4 {
-          --min-height: 45vh;
-          border-width: 1px 0px 1px 0px;
-          --border-top-width: 1px;
-          --border-right-width: 0px;
-          --border-bottom-width: 1px;
-          --border-left-width: 0px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-9d54f8 {
-          border-width: 0px 0px 0px 0px;
-          --border-top-width: 0px;
-          --border-right-width: 0px;
-          --border-bottom-width: 0px;
-          --border-left-width: 0px;
-          --padding-top: 15%;
-          --padding-bottom: 15%;
-          --padding-left: 5%;
-          --padding-right: 5%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-4a3ce588 {
-          --padding-top: 0%;
-          --padding-bottom: 0%;
-          --padding-left: 0%;
-          --padding-right: 0%;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-31b372f
-          .elementor-heading-title {
-          font-size: 40px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-e088762 {
-          --min-height: 45vh;
-          border-width: 1px 0px 1px 0px;
-          --border-top-width: 1px;
-          --border-right-width: 0px;
-          --border-bottom-width: 1px;
-          --border-left-width: 0px;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-323f7f51
-          > .elementor-container {
-          min-height: 1404px;
-        }
-        .elementor-8175 .elementor-element.elementor-element-26c3e4f {
-          --flex-direction: column-reverse;
-          --container-widget-width: 100%;
-          --container-widget-height: initial;
-          --container-widget-flex-grow: 0;
-          --container-widget-align-self: initial;
-          --padding-top: 15%;
-          --padding-bottom: 15%;
-          --padding-left: 5%;
-          --padding-right: 5%;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-1c7e6050
-          .elementor-cta__bg-wrapper {
-          min-height: 35vh;
-        }
-        .elementor-8175 .elementor-element.elementor-element-1c7e6050 {
-          width: 100%;
-          max-width: 100%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-792e2972 {
-          --padding-top: 15%;
-          --padding-bottom: 15%;
-          --padding-left: 5%;
-          --padding-right: 5%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-7ca55d0b {
-          text-align: center;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-7ca55d0b
-          .elementor-heading-title {
-          font-size: 32px;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-128cc15b
-          .elementor-cta__bg-wrapper {
-          min-height: 35vh;
-        }
-        .elementor-8175 .elementor-element.elementor-element-128cc15b {
-          width: 100%;
-          max-width: 100%;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-38c24132
+        .elementor-3469
+          .elementor-element.elementor-element-1697afde
           > .elementor-background-overlay {
           background-size: 300% auto;
         }
-        .elementor-8175 .elementor-element.elementor-element-38c24132 {
+        .elementor-3469 .elementor-element.elementor-element-1697afde {
           padding: 15% 5% 15% 5%;
         }
-        .elementor-8175
-          .elementor-element.elementor-element-624c4d38
+        .elementor-3469
+          .elementor-element.elementor-element-16f01a38
           > .elementor-element-populated {
           padding: 0px 0px 0px 0px;
         }
-        .elementor-8175 .elementor-element.elementor-element-52352740 {
+        .elementor-3469 .elementor-element.elementor-element-679ec84c {
           text-align: center;
-        }
-      }
-      @media (min-width: 768px) {
-        .elementor-8175 .elementor-element.elementor-element-1001af4 {
-          --width: 25%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-9d54f8 {
-          --width: 50%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-e088762 {
-          --width: 25%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-5ccaf295 {
-          --width: 25%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-792e2972 {
-          --width: 50%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-68630d47 {
-          --width: 25%;
-        }
-      }
-      @media (max-width: 1024px) and (min-width: 768px) {
-        .elementor-8175 .elementor-element.elementor-element-1001af4 {
-          --width: 100%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-9d54f8 {
-          --width: 100%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-e088762 {
-          --width: 100%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-792e2972 {
-          --width: 50%;
-        }
-        .elementor-8175 .elementor-element.elementor-element-624c4d38 {
-          width: 40%;
-        }
-      }
-      @media (min-width: 1025px) {
-        .elementor-8175
-          .elementor-element.elementor-element-36f7f37f:not(
-            .elementor-motion-effects-element-type-background
-          ),
-        .elementor-8175
-          .elementor-element.elementor-element-36f7f37f
-          > .elementor-motion-effects-container
-          > .elementor-motion-effects-layer {
-          background-attachment: fixed;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-1001af4:not(
-            .elementor-motion-effects-element-type-background
-          ),
-        .elementor-8175
-          .elementor-element.elementor-element-1001af4
-          > .elementor-motion-effects-container
-          > .elementor-motion-effects-layer {
-          background-attachment: scroll;
-        }
-        .elementor-8175
-          .elementor-element.elementor-element-e088762:not(
-            .elementor-motion-effects-element-type-background
-          ),
-        .elementor-8175
-          .elementor-element.elementor-element-e088762
-          > .elementor-motion-effects-container
-          > .elementor-motion-effects-layer {
-          background-attachment: scroll;
         }
       }
     </style>
 
-    <noscript
-      ><link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&#038;display=swap&#038;ver=1718728676"
-    /></noscript>
-    <link
-      rel="stylesheet"
-      id="google-fonts-1-css"
-      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDancing+Script%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.6"
-      type="text/css"
-      media="all"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
-      id="jquery-core-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
-      id="jquery-migrate-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js?ver=1.7.1"
-      id="leaflet-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-content/themes/homey/js/leafletCluster/leaflet.markercluster.js?ver=1.4.0"
-      id="leafletMarkerCluster-js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.21.8"
-      id="font-awesome-4-shim-js"
-    ></script>
-    <link
-      rel="https://api.w.org/"
-      href="https://www.oodlesretreat.com/wp-json/"
-    />
     <link
       rel="alternate"
       title="JSON"
       type="application/json"
-      href="https://www.oodlesretreat.com/wp-json/wp/v2/pages/8175"
+      href="https://www.oodlesretreat.com/wp-json/wp/v2/pages/3469"
     />
     <link
       rel="EditURI"
@@ -3664,20 +2560,20 @@
 
     <link
       rel="canonical"
-      href="https://www.oodlesretreat.com/retreat-accommodation/"
+      href="https://www.oodlesretreat.com/privacy-policy-2/"
     />
-    <link rel="shortlink" href="https://www.oodlesretreat.com/?p=8175" />
+    <link rel="shortlink" href="https://www.oodlesretreat.com/?p=3469" />
     <link
       rel="alternate"
       title="oEmbed (JSON)"
       type="application/json+oembed"
-      href="https://www.oodlesretreat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oodlesretreat.com%2Fretreat-accommodation%2F"
+      href="https://www.oodlesretreat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oodlesretreat.com%2Fprivacy-policy-2%2F"
     />
     <link
       rel="alternate"
       title="oEmbed (XML)"
       type="text/xml+oembed"
-      href="https://www.oodlesretreat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oodlesretreat.com%2Fretreat-accommodation%2F&#038;format=xml"
+      href="https://www.oodlesretreat.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.oodlesretreat.com%2Fprivacy-policy-2%2F&#038;format=xml"
     />
 
 
@@ -3736,7 +2632,7 @@
     {% include "includes/style.html" %}
   </head>
   <body
-    class="page-template-default page page-id-8175 compare-property-active elementor-default elementor-template-full-width elementor-kit-3548 elementor-page elementor-page-8175"
+    class="page-template-default page page-id-3469 compare-property-active elementor-default elementor-template-full-width elementor-kit-3548 elementor-page elementor-page-3469"
   >
     {% include "includes/header.html" %}
     <div id="section-body">
@@ -3747,150 +2643,27 @@
       ></div>
       <div
         data-elementor-type="wp-page"
-        data-elementor-id="8175"
-        class="elementor elementor-8175"
+        data-elementor-id="3469"
+        class="elementor elementor-3469"
         data-elementor-post-type="page"
       >
         <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-36f7f37f elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-          data-id="36f7f37f"
-          data-element_type="section"
-          data-settings='{"background_background":"classic","shape_divider_bottom":"waves"}'
-        >
-          <div
-            class="elementor-shape elementor-shape-bottom"
-            data-negative="false"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1000 100"
-              preserveAspectRatio="none"
-            >
-              <path
-                class="elementor-shape-fill"
-                d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-	c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-	c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z"
-              />
-            </svg>
-          </div>
-          <div class="elementor-container elementor-column-gap-default">
-            <div
-              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58369c34"
-              data-id="58369c34"
-              data-element_type="column"
-            >
-              <div class="elementor-widget-wrap"></div>
-            </div>
-          </div>
-        </section>
-        <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-6f65b56c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-          data-id="6f65b56c"
+          class="elementor-section elementor-top-section elementor-element elementor-element-76ce868c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+          data-id="76ce868c"
           data-element_type="section"
           data-settings='{"animation":"fadeIn","background_background":"classic"}'
         >
-          <div class="elementor-background-overlay"></div>
           <div class="elementor-container elementor-column-gap-default">
             <div
-              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1108b9af"
-              data-id="1108b9af"
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7edd375e"
+              data-id="7edd375e"
               data-element_type="column"
+              data-settings='{"background_background":"classic"}'
             >
               <div class="elementor-widget-wrap elementor-element-populated">
                 <div
-                  class="elementor-element elementor-element-2c915997 elementor-widget elementor-widget-spacer"
-                  data-id="2c915997"
-                  data-element_type="widget"
-                  data-widget_type="spacer.default"
-                >
-                  <div class="elementor-widget-container">
-                    <style>
-                      /*! elementor - v3.21.0 - 26-05-2024 */
-                      .elementor-column .elementor-spacer-inner {
-                        height: var(--spacer-size);
-                      }
-                      .e-con {
-                        --container-widget-width: 100%;
-                      }
-                      .e-con-inner > .elementor-widget-spacer,
-                      .e-con > .elementor-widget-spacer {
-                        width: var(
-                          --container-widget-width,
-                          var(--spacer-size)
-                        );
-                        --align-self: var(
-                          --container-widget-align-self,
-                          initial
-                        );
-                        --flex-shrink: 0;
-                      }
-                      .e-con-inner
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container,
-                      .e-con
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container {
-                        height: 100%;
-                        width: 100%;
-                      }
-                      .e-con-inner
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container
-                        > .elementor-spacer,
-                      .e-con
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container
-                        > .elementor-spacer {
-                        height: 100%;
-                      }
-                      .e-con-inner
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container
-                        > .elementor-spacer
-                        > .elementor-spacer-inner,
-                      .e-con
-                        > .elementor-widget-spacer
-                        > .elementor-widget-container
-                        > .elementor-spacer
-                        > .elementor-spacer-inner {
-                        height: var(
-                          --container-widget-height,
-                          var(--spacer-size)
-                        );
-                      }
-                      .e-con-inner
-                        > .elementor-widget-spacer.elementor-widget-empty,
-                      .e-con > .elementor-widget-spacer.elementor-widget-empty {
-                        position: relative;
-                        min-height: 22px;
-                        min-width: 22px;
-                      }
-                      .e-con-inner
-                        > .elementor-widget-spacer.elementor-widget-empty
-                        .elementor-widget-empty-icon,
-                      .e-con
-                        > .elementor-widget-spacer.elementor-widget-empty
-                        .elementor-widget-empty-icon {
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        padding: 0;
-                        width: 22px;
-                        height: 22px;
-                      }
-                    </style>
-                    <div class="elementor-spacer">
-                      <div class="elementor-spacer-inner"></div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-1e23f0f7 elementor-widget elementor-widget-heading"
-                  data-id="1e23f0f7"
+                  class="elementor-element elementor-element-33785ef3 elementor-widget elementor-widget-heading"
+                  data-id="33785ef3"
                   data-element_type="widget"
                   data-widget_type="heading.default"
                 >
@@ -3930,14 +2703,14 @@
                         font-size: 59px;
                       }
                     </style>
-                    <h2 class="elementor-heading-title elementor-size-default">
-                      Rooms in More Detail
+                    <h2 class="elementor-heading-title elementor-size-xl">
+                      {{page.title|title}}
                     </h2>
                   </div>
                 </div>
                 <div
-                  class="elementor-element elementor-element-33648543 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                  data-id="33648543"
+                  class="elementor-element elementor-element-609410d9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                  data-id="609410d9"
                   data-element_type="widget"
                   data-widget_type="divider.default"
                 >
@@ -4110,1490 +2883,120 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="elementor-element elementor-element-53b27c6b elementor-widget elementor-widget-text-editor"
-                  data-id="53b27c6b"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
+                <section
+                  class="elementor-section elementor-inner-section elementor-element elementor-element-62093ed4 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                  data-id="62093ed4"
+                  data-element_type="section"
                 >
-                  <div class="elementor-widget-container">
-                    <style>
-                      /*! elementor - v3.21.0 - 26-05-2024 */
-                      .elementor-widget-text-editor.elementor-drop-cap-view-stacked
-                        .elementor-drop-cap {
-                        background-color: #69727d;
-                        color: #fff;
-                      }
-                      .elementor-widget-text-editor.elementor-drop-cap-view-framed
-                        .elementor-drop-cap {
-                        color: #69727d;
-                        border: 3px solid;
-                        background-color: transparent;
-                      }
-                      .elementor-widget-text-editor:not(
-                          .elementor-drop-cap-view-default
-                        )
-                        .elementor-drop-cap {
-                        margin-top: 8px;
-                      }
-                      .elementor-widget-text-editor:not(
-                          .elementor-drop-cap-view-default
-                        )
-                        .elementor-drop-cap-letter {
-                        width: 1em;
-                        height: 1em;
-                      }
-                      .elementor-widget-text-editor .elementor-drop-cap {
-                        float: left;
-                        text-align: center;
-                        line-height: 1;
-                        font-size: 50px;
-                      }
-                      .elementor-widget-text-editor .elementor-drop-cap-letter {
-                        display: inline-block;
-                      }
-                    </style>
-                    <p>
-                      Available for exclusive hire, the retreat offers 11
-                      bedrooms, 10 bathrooms, <br />and various lounge areas,
-                      making it the ideal location for you and your guests to
-                      relax and unwind.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div
-          class="elementor-element elementor-element-19b9daed e-con-full e-flex e-con e-parent"
-          data-id="19b9daed"
-          data-element_type="container"
-          data-settings='{"background_background":"classic"}'
-        >
-          <div
-            class="elementor-element elementor-element-1001af4 e-con-full e-flex e-con e-child"
-            data-id="1001af4"
-            data-element_type="container"
-            data-settings='{"background_background":"classic"}'
-          ></div>
-          <div
-            class="elementor-element elementor-element-9d54f8 e-con-full e-flex e-con e-child"
-            data-id="9d54f8"
-            data-element_type="container"
-          >
-            <div
-              class="elementor-element elementor-element-4a3ce588 e-con-full e-flex e-con e-child"
-              data-id="4a3ce588"
-              data-element_type="container"
-            >
-              <div
-                class="elementor-element elementor-element-31b372f elementor-widget elementor-widget-heading"
-                data-id="31b372f"
-                data-element_type="widget"
-                data-widget_type="heading.default"
-              >
-                <div class="elementor-widget-container">
-                  <h2 class="elementor-heading-title elementor-size-default">
-                    The Main House
-                  </h2>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-3b721a3b elementor-widget elementor-widget-text-editor"
-                data-id="3b721a3b"
-                data-element_type="widget"
-                data-widget_type="text-editor.default"
-              >
-                <div class="elementor-widget-container">
-                  <p>
-                    The main house accommodates up to 16 people. <br />All
-                    bedrooms have the option of super king or twin beds.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="elementor-element elementor-element-51b67d4 e-flex e-con-boxed e-con e-child"
-                data-id="51b67d4"
-                data-element_type="container"
-              >
-                <div class="e-con-inner">
-                  <div
-                    class="elementor-element elementor-element-c864598 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                    data-id="c864598"
-                    data-element_type="widget"
-                    data-widget_type="icon-list.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <link
-                        rel="stylesheet"
-                        href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
-                      />
-                      <ul class="elementor-icon-list-items">
-                        <li class="elementor-icon-list-item">
-                          <span class="elementor-icon-list-icon">
-                            <svg
-                              aria-hidden="true"
-                              class="e-font-icon-svg e-fas-atom"
-                              viewBox="0 0 448 512"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                              ></path>
-                            </svg>
-                          </span>
-                          <span class="elementor-icon-list-text"
-                            >Classic Room 1, Sleeps 2 with Ensuite Bathroom
-                            includes toilet/sink/shower/bath​</span
-                          >
-                        </li>
-                        <li class="elementor-icon-list-item">
-                          <span class="elementor-icon-list-icon">
-                            <svg
-                              aria-hidden="true"
-                              class="e-font-icon-svg e-fas-atom"
-                              viewBox="0 0 448 512"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                              ></path>
-                            </svg>
-                          </span>
-                          <span class="elementor-icon-list-text"
-                            >Classic Room 2, Sleeps 2 with Ensuite Bathroom
-                            includes toilet/sink/shower</span
-                          >
-                        </li>
-                        <li class="elementor-icon-list-item">
-                          <span class="elementor-icon-list-icon">
-                            <svg
-                              aria-hidden="true"
-                              class="e-font-icon-svg e-fas-atom"
-                              viewBox="0 0 448 512"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                              ></path>
-                            </svg>
-                          </span>
-                          <span class="elementor-icon-list-text"
-                            >Classic Room 3, Sleeps 2 with Ensuite Bathroom
-                            includes toilet/sink/shower</span
-                          >
-                        </li>
-                        <li class="elementor-icon-list-item">
-                          <span class="elementor-icon-list-icon">
-                            <svg
-                              aria-hidden="true"
-                              class="e-font-icon-svg e-fas-atom"
-                              viewBox="0 0 448 512"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                              ></path>
-                            </svg>
-                          </span>
-                          <span class="elementor-icon-list-text"
-                            >Classic Room 4, Sleeps 2 with Ensuite Bathroom
-                            includes toilet/sink/shower</span
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-31a76f3 elementor-widget elementor-widget-spacer"
-                    data-id="31a76f3"
-                    data-element_type="widget"
-                    data-widget_type="spacer.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <div class="elementor-spacer">
-                        <div class="elementor-spacer-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-03c2b76 elementor-widget elementor-widget-heading"
-                    data-id="03c2b76"
-                    data-element_type="widget"
-                    data-widget_type="heading.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <h2
-                        class="elementor-heading-title elementor-size-default"
-                      >
-                        Bedroom 7
-                      </h2>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-ff8ab99 elementor-widget elementor-widget-text-editor"
-                    data-id="ff8ab99"
-                    data-element_type="widget"
-                    data-widget_type="text-editor.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <p>
-                        Sleeps 4 in 2 sets of bunk bed and typically reserved
-                        for host staff or volunteers. This room does not have a
-                        window or bathroom. However, guests staying in this room
-                        have the convenient option to use the bathroom
-                        facilities located in the nearby Yoga Studio.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="elementor-element elementor-element-780d07b elementor-align-left elementor-widget elementor-widget-button"
-                    data-id="780d07b"
-                    data-element_type="widget"
-                    data-widget_type="button.default"
-                  >
-                    <div class="elementor-widget-container">
-                      <div class="elementor-button-wrapper">
-                        <a
-                          class="elementor-button elementor-button-link elementor-size-sm"
-                          href="https://www.oodlesretreat.com/wp-content/uploads/2023/08/FULL-FLOOR-LAYOUT-2023-PDF-FORMAT.pdf"
-                        >
-                          <span class="elementor-button-content-wrapper">
-                            <span class="elementor-button-text"
-                              >DOWNLOAD FLOOR LAYOUT</span
-                            >
-                          </span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-element elementor-element-e088762 e-con-full e-flex e-con e-child"
-            data-id="e088762"
-            data-element_type="container"
-            data-settings='{"background_background":"classic"}'
-          ></div>
-        </div>
-        <div
-          class="elementor-element elementor-element-d0cd22d e-con-full e-flex e-con e-parent"
-          data-id="d0cd22d"
-          data-element_type="container"
-          data-settings='{"background_background":"classic"}'
-        >
-          <div
-            class="elementor-element elementor-element-de31cac elementor-widget elementor-widget-gallery"
-            data-id="de31cac"
-            data-element_type="widget"
-            data-settings='{"gallery_layout":"justified","lazyload":"yes","ideal_row_height":{"unit":"px","size":200,"sizes":[]},"ideal_row_height_tablet":{"unit":"px","size":150,"sizes":[]},"ideal_row_height_mobile":{"unit":"px","size":150,"sizes":[]},"gap":{"unit":"px","size":10,"sizes":[]},"gap_tablet":{"unit":"px","size":10,"sizes":[]},"gap_mobile":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
-            data-widget_type="gallery.default"
-          >
-            <div class="elementor-widget-container">
-              <style>
-                /*! elementor-pro - v3.19.0 - 26-02-2024 */
-                .elementor-gallery__container {
-                  min-height: 1px;
-                }
-                .elementor-gallery-item {
-                  position: relative;
-                  overflow: hidden;
-                  display: block;
-                  text-decoration: none;
-                  border: solid var(--image-border-width)
-                    var(--image-border-color);
-                  border-radius: var(--image-border-radius);
-                }
-                .elementor-gallery-item__content,
-                .elementor-gallery-item__overlay {
-                  height: 100%;
-                  width: 100%;
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                }
-                .elementor-gallery-item__overlay {
-                  mix-blend-mode: var(--overlay-mix-blend-mode);
-                  transition-duration: var(--overlay-transition-duration);
-                  transition-property: mix-blend-mode, transform, opacity,
-                    background-color;
-                }
-                .elementor-gallery-item__image.e-gallery-image {
-                  transition-duration: var(--image-transition-duration);
-                  transition-property: filter, transform;
-                }
-                .elementor-gallery-item__content {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: var(--content-justify-content, center);
-                  align-items: center;
-                  text-align: var(--content-text-align);
-                  padding: var(--content-padding);
-                }
-                .elementor-gallery-item__content > div {
-                  transition-duration: var(--content-transition-duration);
-                }
-                .elementor-gallery-item__content.elementor-gallery--sequenced-animation
-                  > div:nth-child(2) {
-                  transition-delay: calc(var(--content-transition-delay) / 3);
-                }
-                .elementor-gallery-item__content.elementor-gallery--sequenced-animation
-                  > div:nth-child(3) {
-                  transition-delay: calc(
-                    var(--content-transition-delay) / 3 * 2
-                  );
-                }
-                .elementor-gallery-item__content.elementor-gallery--sequenced-animation
-                  > div:nth-child(4) {
-                  transition-delay: calc(
-                    var(--content-transition-delay) / 3 * 3
-                  );
-                }
-                .elementor-gallery-item__description {
-                  color: var(--description-text-color, #fff);
-                  width: 100%;
-                }
-                .elementor-gallery-item__title {
-                  color: var(--title-text-color, #fff);
-                  font-weight: 700;
-                  width: 100%;
-                }
-                .elementor-gallery__titles-container {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: var(
-                    --titles-container-justify-content,
-                    center
-                  );
-                  margin-bottom: 20px;
-                }
-                .elementor-gallery__titles-container:not(.e--pointer-framed)
-                  .elementor-item:after,
-                .elementor-gallery__titles-container:not(.e--pointer-framed)
-                  .elementor-item:before {
-                  background-color: var(--galleries-pointer-bg-color-hover);
-                }
-                .elementor-gallery__titles-container:not(.e--pointer-framed)
-                  .elementor-item.elementor-item-active:after,
-                .elementor-gallery__titles-container:not(.e--pointer-framed)
-                  .elementor-item.elementor-item-active:before {
-                  background-color: var(--galleries-pointer-bg-color-active);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed
-                  .elementor-item:before {
-                  border-color: var(--galleries-pointer-bg-color-hover);
-                  border-width: var(--galleries-pointer-border-width);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed
-                  .elementor-item:after {
-                  border-color: var(--galleries-pointer-bg-color-hover);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed
-                  .elementor-item.elementor-item-active:after,
-                .elementor-gallery__titles-container.e--pointer-framed
-                  .elementor-item.elementor-item-active:before {
-                  border-color: var(--galleries-pointer-bg-color-active);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed.e--animation-draw
-                  .elementor-item:before {
-                  border-left-width: var(--galleries-pointer-border-width);
-                  border-bottom-width: var(--galleries-pointer-border-width);
-                  border-right-width: 0;
-                  border-top-width: 0;
-                }
-                .elementor-gallery__titles-container.e--pointer-framed.e--animation-draw
-                  .elementor-item:after {
-                  border-left-width: 0;
-                  border-bottom-width: 0;
-                  border-right-width: var(--galleries-pointer-border-width);
-                  border-top-width: var(--galleries-pointer-border-width);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed.e--animation-corners
-                  .elementor-item:before {
-                  border-left-width: var(--galleries-pointer-border-width);
-                  border-bottom-width: 0;
-                  border-right-width: 0;
-                  border-top-width: var(--galleries-pointer-border-width);
-                }
-                .elementor-gallery__titles-container.e--pointer-framed.e--animation-corners
-                  .elementor-item:after {
-                  border-left-width: 0;
-                  border-bottom-width: var(--galleries-pointer-border-width);
-                  border-right-width: var(--galleries-pointer-border-width);
-                  border-top-width: 0;
-                }
-                .elementor-gallery__titles-container
-                  .e--pointer-double-line
-                  .elementor-item:after,
-                .elementor-gallery__titles-container
-                  .e--pointer-double-line
-                  .elementor-item:before,
-                .elementor-gallery__titles-container
-                  .e--pointer-overline
-                  .elementor-item:before,
-                .elementor-gallery__titles-container
-                  .e--pointer-underline
-                  .elementor-item:after {
-                  height: var(--galleries-pointer-border-width);
-                }
-                .elementor-gallery-title {
-                  --space-between: 10px;
-                  cursor: pointer;
-                  color: #6d7882;
-                  font-weight: 500;
-                  position: relative;
-                  padding: 7px 14px;
-                  transition: all 0.3s;
-                }
-                .elementor-gallery-title--active {
-                  color: #495157;
-                }
-                .elementor-gallery-title:not(:last-child) {
-                  margin-right: var(--space-between);
-                }
-                .elementor-gallery-item__title
-                  + .elementor-gallery-item__description {
-                  margin-top: var(--description-margin-top);
-                }
-                .e-gallery-item.elementor-gallery-item {
-                  transition-property: all;
-                }
-                .e-gallery-item.elementor-animated-content
-                  .elementor-animated-item--enter-from-bottom,
-                .e-gallery-item.elementor-animated-content
-                  .elementor-animated-item--enter-from-left,
-                .e-gallery-item.elementor-animated-content
-                  .elementor-animated-item--enter-from-right,
-                .e-gallery-item.elementor-animated-content
-                  .elementor-animated-item--enter-from-top,
-                .e-gallery-item:focus .elementor-gallery__item-overlay-bg,
-                .e-gallery-item:focus .elementor-gallery__item-overlay-content,
-                .e-gallery-item:focus
-                  .elementor-gallery__item-overlay-content__description,
-                .e-gallery-item:focus
-                  .elementor-gallery__item-overlay-content__title,
-                .e-gallery-item:hover .elementor-gallery__item-overlay-bg,
-                .e-gallery-item:hover .elementor-gallery__item-overlay-content,
-                .e-gallery-item:hover
-                  .elementor-gallery__item-overlay-content__description,
-                .e-gallery-item:hover
-                  .elementor-gallery__item-overlay-content__title {
-                  opacity: 1;
-                }
-                a.elementor-item.elementor-gallery-title {
-                  color: var(--galleries-title-color-normal);
-                }
-                a.elementor-item.elementor-gallery-title.elementor-item-active,
-                a.elementor-item.elementor-gallery-title.highlighted,
-                a.elementor-item.elementor-gallery-title:focus,
-                a.elementor-item.elementor-gallery-title:hover {
-                  color: var(--galleries-title-color-hover);
-                }
-                a.elementor-item.elementor-gallery-title.elementor-item-active {
-                  color: var(--gallery-title-color-active);
-                }
-                .e-con-inner > .elementor-widget-gallery,
-                .e-con > .elementor-widget-gallery {
-                  width: var(--container-widget-width);
-                  --flex-grow: var(--container-widget-flex-grow);
-                }
-              </style>
-              <div class="elementor-gallery__container">
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2023/01/House.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="House"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NjczMSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMDFcL0hvdXNlLmpwZyIsInNsaWRlc2hvdyI6ImRlMzFjYWMifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2023/01/House-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/ENTRANCE-TO-POOL.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="ENTRANCE-TO-POOL"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQyMywidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0VOVFJBTkNFLVRPLVBPT0wuanBnIiwic2xpZGVzaG93IjoiZGUzMWNhYyJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/ENTRANCE-TO-POOL-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/OUTDOOR-KITCHEN-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="OUTDOOR-KITCHEN"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzU1NCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL09VVERPT1ItS0lUQ0hFTi0xLmpwZyIsInNsaWRlc2hvdyI6ImRlMzFjYWMifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/OUTDOOR-KITCHEN-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/EXTERIOR.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="EXTERIOR"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQyNiwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0VYVEVSSU9SLmpwZyIsInNsaWRlc2hvdyI6ImRlMzFjYWMifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/EXTERIOR-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/AERIAL-VIEW.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="AERIAL-VIEW"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQwMCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0FFUklBTC1WSUVXLmpwZyIsInNsaWRlc2hvdyI6ImRlMzFjYWMifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/AERIAL-VIEW-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Aerial-New-1024x683-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="Aerial-New-1024x683"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzk1MiwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL0FlcmlhbC1OZXctMTAyNHg2ODMtMS5qcGciLCJzbGlkZXNob3ciOiJkZTMxY2FjIn0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Aerial-New-1024x683-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/TENNIS-COURT-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="TENNIS-COURT"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzU1OSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL1RFTk5JUy1DT1VSVC0xLmpwZyIsInNsaWRlc2hvdyI6ImRlMzFjYWMifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/TENNIS-COURT-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/EXTERIOR-DINING.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="EXTERIOR-DINING"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQyNSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0VYVEVSSU9SLURJTklORy5qcGciLCJzbGlkZXNob3ciOiJkZTMxY2FjIn0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/EXTERIOR-DINING-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/YOGA-STUDIO-IN-USE.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="YOGA-STUDIO-IN-USE"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ1MiwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL1lPR0EtU1RVRElPLUlOLVVTRS5qcGciLCJzbGlkZXNob3ciOiJkZTMxY2FjIn0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/YOGA-STUDIO-IN-USE-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/BEACH-VOLLEYBALL.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="de31cac"
-                  data-elementor-lightbox-title="BEACH-VOLLEYBALL"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQwNywidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0JFQUNILVZPTExFWUJBTEwuanBnIiwic2xpZGVzaG93IjoiZGUzMWNhYyJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/BEACH-VOLLEYBALL-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-323f7f51 elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-section-height-default elementor-invisible"
-          data-id="323f7f51"
-          data-element_type="section"
-          data-settings='{"background_background":"classic","animation":"fadeIn"}'
-        >
-          <div class="elementor-container elementor-column-gap-no">
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3260d407"
-              data-id="3260d407"
-              data-element_type="column"
-              data-settings='{"background_background":"slideshow","background_slideshow_gallery":[{"id":5512,"url":"https:\/\/www.oodlesretreat.com\/wp-content\/uploads\/2022\/01\/BEDROOM-5.jpg"},{"id":5515,"url":"https:\/\/www.oodlesretreat.com\/wp-content\/uploads\/2022\/01\/BEDROOM-6.jpg"},{"id":3957,"url":"https:\/\/www.oodlesretreat.com\/wp-content\/uploads\/2021\/09\/17-1024x683-1.jpg"}],"background_slideshow_loop":"yes","background_slideshow_slide_duration":5000,"background_slideshow_slide_transition":"fade","background_slideshow_transition_duration":500}'
-            >
-              <div class="elementor-widget-wrap"></div>
-            </div>
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4117ab8a"
-              data-id="4117ab8a"
-              data-element_type="column"
-              data-settings='{"background_background":"classic"}'
-            >
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-aa80890 elementor-widget elementor-widget-heading"
-                  data-id="aa80890"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
-                      Interconnecting Rooms 5&amp;6
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-5c52038c elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                  data-id="5c52038c"
-                  data-element_type="widget"
-                  data-widget_type="divider.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"> </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-6fe2f40c elementor-widget elementor-widget-text-editor"
-                  data-id="6fe2f40c"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>
-                      <strong
-                        >Two King Size or Twin Beds, one full size bunk bed and
-                        En-suite Bathroom<br /></strong
-                      >The perfect choice for groups, interconnecting suite
-                      includes king size or twin beds and one set of full size
-                      bunk beds. Two spacious rooms with dressing area and
-                      en-suite bathroom. Hosts normally price this room at a
-                      lower rate due to it accommodating 4 people. Ideal if
-                      there are a group of friends that are happy to share.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div
-          class="elementor-element elementor-element-88c5939 e-con-full e-flex e-con e-parent"
-          data-id="88c5939"
-          data-element_type="container"
-          data-settings='{"background_background":"classic"}'
-        >
-          <div
-            class="elementor-element elementor-element-6b84a90 elementor-widget elementor-widget-gallery"
-            data-id="6b84a90"
-            data-element_type="widget"
-            data-settings='{"gallery_layout":"justified","lazyload":"yes","ideal_row_height":{"unit":"px","size":200,"sizes":[]},"ideal_row_height_tablet":{"unit":"px","size":150,"sizes":[]},"ideal_row_height_mobile":{"unit":"px","size":150,"sizes":[]},"gap":{"unit":"px","size":10,"sizes":[]},"gap_tablet":{"unit":"px","size":10,"sizes":[]},"gap_mobile":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
-            data-widget_type="gallery.default"
-          >
-            <div class="elementor-widget-container">
-              <div class="elementor-gallery__container">
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Dining-Room.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="Dining Room"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzk1MywidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL0RpbmluZy1Sb29tLmpwZyIsInNsaWRlc2hvdyI6IjZiODRhOTAifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Dining-Room-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOUNGE.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="LOUNGE"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwNCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0xPVU5HRS5qcGciLCJzbGlkZXNob3ciOiI2Yjg0YTkwIn0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOUNGE-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/KITCHEN-OPEN-PLAN.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="KITCHEN OPEN PLAN"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwOSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0tJVENIRU4tT1BFTi1QTEFOLmpwZyIsInNsaWRlc2hvdyI6IjZiODRhOTAifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/KITCHEN-OPEN-PLAN-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/KITCHEN-AREA.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="KITCHEN AREA"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwOCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0tJVENIRU4tQVJFQS5qcGciLCJzbGlkZXNob3ciOiI2Yjg0YTkwIn0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/KITCHEN-AREA-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOWER-LOUNGE-AREA-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="LOWER LOUNGE AREA 1"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwMiwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0xPV0VSLUxPVU5HRS1BUkVBLTEuanBnIiwic2xpZGVzaG93IjoiNmI4NGE5MCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOWER-LOUNGE-AREA-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOUNGE-AREA-SNUG.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="LOUNGE AREA SNUG"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTYwMCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0xPVU5HRS1BUkVBLVNOVUcuanBnIiwic2xpZGVzaG93IjoiNmI4NGE5MCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/LOUNGE-AREA-SNUG-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/STAIRCASE-TO-LEVEL-3-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="STAIRCASE-TO-LEVEL-3"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MzU1NywidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL1NUQUlSQ0FTRS1UTy1MRVZFTC0zLTEuanBnIiwic2xpZGVzaG93IjoiNmI4NGE5MCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/STAIRCASE-TO-LEVEL-3-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-8.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="BATHROOM 8"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUwOCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0JBVEhST09NLTguanBnIiwic2xpZGVzaG93IjoiNmI4NGE5MCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-8-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-4.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="BATHROOM 4"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUwOSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0JBVEhST09NLTQuanBnIiwic2xpZGVzaG93IjoiNmI4NGE5MCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-4-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/PoolTable-1024x781-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="6b84a90"
-                  data-elementor-lightbox-title="PoolTable-1024x781"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDAzOSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL1Bvb2xUYWJsZS0xMDI0eDc4MS0xLmpwZyIsInNsaWRlc2hvdyI6IjZiODRhOTAifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/PoolTable-1024x781-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="elementor-element elementor-element-26c3e4f e-con-full e-flex e-con e-parent"
-          data-id="26c3e4f"
-          data-element_type="container"
-          data-settings='{"background_background":"classic"}'
-        >
-          <div
-            class="elementor-element elementor-element-5ccaf295 e-con-full e-flex e-con e-child"
-            data-id="5ccaf295"
-            data-element_type="container"
-          >
-            <div
-              class="elementor-element elementor-element-1c7e6050 elementor-cta--layout-image-left elementor-cta--mobile-layout-image-above elementor-cta--valign-middle elementor-widget-mobile__width-inherit elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
-              data-id="1c7e6050"
-              data-element_type="widget"
-              data-widget_type="call-to-action.default"
-            >
-              <div class="elementor-widget-container">
-                <link
-                  rel="stylesheet"
-                  href="https://www.oodlesretreat.com/wp-content/plugins/elementor-pro/assets/css/widget-call-to-action.min.css"
-                />
-                <div class="elementor-cta">
-                  <div class="elementor-cta__bg-wrapper">
+                  <div class="elementor-container elementor-column-gap-default">
                     <div
-                      class="elementor-cta__bg elementor-bg"
-                      style="
-                        background-image: url(https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-8-1024x683.jpg);
-                      "
-                      role="img"
-                      aria-label="Bedroom 8"
-                    ></div>
-                    <div class="elementor-cta__bg-overlay"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-element elementor-element-792e2972 e-con-full e-flex e-con e-child"
-            data-id="792e2972"
-            data-element_type="container"
-          >
-            <div
-              class="elementor-element elementor-element-7ca55d0b elementor-widget elementor-widget-heading"
-              data-id="7ca55d0b"
-              data-element_type="widget"
-              data-widget_type="heading.default"
-            >
-              <div class="elementor-widget-container">
-                <h2 class="elementor-heading-title elementor-size-default">
-                  Level 3 Rooms
-                </h2>
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-aebb7cf elementor-widget elementor-widget-text-editor"
-              data-id="aebb7cf"
-              data-element_type="widget"
-              data-widget_type="text-editor.default"
-            >
-              <div class="elementor-widget-container">
-                <p>
-                  There are 3 rooms located on level 3. Each room offers super
-                  king or twin beds. Bedroom 8 and 9 enjoy private terraces with
-                  pool and countryside views.
-                </p>
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-f61e494 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-              data-id="f61e494"
-              data-element_type="widget"
-              data-widget_type="icon-list.default"
-            >
-              <div class="elementor-widget-container">
-                <ul class="elementor-icon-list-items">
-                  <li class="elementor-icon-list-item">
-                    <span class="elementor-icon-list-icon">
-                      <svg
-                        aria-hidden="true"
-                        class="e-font-icon-svg e-fas-atom"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span class="elementor-icon-list-text"
-                      >Room 8, Sleeps 2 with Ensuite Bathroom includes
-                      toilet/sink/shower</span
+                      class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4399144d"
+                      data-id="4399144d"
+                      data-element_type="column"
                     >
-                  </li>
-                  <li class="elementor-icon-list-item">
-                    <span class="elementor-icon-list-icon">
-                      <svg
-                        aria-hidden="true"
-                        class="e-font-icon-svg e-fas-atom"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <div
+                        class="elementor-widget-wrap elementor-element-populated"
                       >
-                        <path
-                          d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span class="elementor-icon-list-text"
-                      >Room 9, Sleeps 2 with Ensuite Bathroom includes
-                      toilet/sink/shower</span
-                    >
-                  </li>
-                  <li class="elementor-icon-list-item">
-                    <span class="elementor-icon-list-icon">
-                      <svg
-                        aria-hidden="true"
-                        class="e-font-icon-svg e-fas-atom"
-                        viewBox="0 0 448 512"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M223.99908,224a32,32,0,1,0,32.00782,32A32.06431,32.06431,0,0,0,223.99908,224Zm214.172-96c-10.877-19.5-40.50979-50.75-116.27544-41.875C300.39168,34.875,267.63386,0,223.99908,0s-76.39066,34.875-97.89653,86.125C50.3369,77.375,20.706,108.5,9.82907,128-6.54984,157.375-5.17484,201.125,34.958,256-5.17484,310.875-6.54984,354.625,9.82907,384c29.13087,52.375,101.64652,43.625,116.27348,41.875C147.60842,477.125,180.36429,512,223.99908,512s76.3926-34.875,97.89652-86.125c14.62891,1.75,87.14456,10.5,116.27544-41.875C454.55,354.625,453.175,310.875,413.04017,256,453.175,201.125,454.55,157.375,438.171,128ZM63.33886,352c-4-7.25-.125-24.75,15.00391-48.25,6.87695,6.5,14.12891,12.875,21.88087,19.125,1.625,13.75,4,27.125,6.75,40.125C82.34472,363.875,67.09081,358.625,63.33886,352Zm36.88478-162.875c-7.752,6.25-15.00392,12.625-21.88087,19.125-15.12891-23.5-19.00392-41-15.00391-48.25,3.377-6.125,16.37891-11.5,37.88478-11.5,1.75,0,3.875.375,5.75.375C104.09864,162.25,101.84864,175.625,100.22364,189.125ZM223.99908,64c9.50195,0,22.25586,13.5,33.88282,37.25-11.252,3.75-22.50391,8-33.88282,12.875-11.377-4.875-22.62892-9.125-33.88283-12.875C201.74516,77.5,214.49712,64,223.99908,64Zm0,384c-9.502,0-22.25392-13.5-33.88283-37.25,11.25391-3.75,22.50587-8,33.88283-12.875C235.378,402.75,246.62994,407,257.8819,410.75,246.25494,434.5,233.501,448,223.99908,448Zm0-112a80,80,0,1,1,80-80A80.00023,80.00023,0,0,1,223.99908,336ZM384.6593,352c-3.625,6.625-19.00392,11.875-43.63479,11,2.752-13,5.127-26.375,6.752-40.125,7.75195-6.25,15.00391-12.625,21.87891-19.125C384.7843,327.25,388.6593,344.75,384.6593,352ZM369.65538,208.25c-6.875-6.5-14.127-12.875-21.87891-19.125-1.625-13.5-3.875-26.875-6.752-40.25,1.875,0,4.002-.375,5.752-.375,21.50391,0,34.50782,5.375,37.88283,11.5C388.6593,167.25,384.7843,184.75,369.65538,208.25Z"
-                        ></path>
-                      </svg>
-                    </span>
-                    <span class="elementor-icon-list-text"
-                      >Room 10, Sleeps 2 with Ensuite Bathroom includes
-                      toilet/sink/shower</span
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div
-              class="elementor-element elementor-element-58c933f elementor-align-center elementor-widget elementor-widget-button"
-              data-id="58c933f"
-              data-element_type="widget"
-              data-widget_type="button.default"
-            >
-              <div class="elementor-widget-container">
-                <div class="elementor-button-wrapper">
-                  <a
-                    class="elementor-button elementor-button-link elementor-size-sm"
-                    href="https://www.oodlesretreat.com/wp-content/uploads/2023/08/FULL-FLOOR-LAYOUT-2023-PDF-FORMAT.pdf"
-                  >
-                    <span class="elementor-button-content-wrapper">
-                      <span class="elementor-button-text"
-                        >DOWNLOAD FLOOR LAYOUT</span
-                      >
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="elementor-element elementor-element-68630d47 e-con-full e-flex e-con e-child"
-            data-id="68630d47"
-            data-element_type="container"
-          >
-            <div
-              class="elementor-element elementor-element-128cc15b elementor-cta--layout-image-left elementor-cta--mobile-layout-image-above elementor-cta--valign-middle elementor-widget-mobile__width-inherit elementor-cta--skin-classic elementor-animated-content elementor-bg-transform elementor-bg-transform-zoom-in elementor-widget elementor-widget-call-to-action"
-              data-id="128cc15b"
-              data-element_type="widget"
-              data-widget_type="call-to-action.default"
-            >
-              <div class="elementor-widget-container">
-                <div class="elementor-cta">
-                  <div class="elementor-cta__bg-wrapper">
-                    <div
-                      class="elementor-cta__bg elementor-bg"
-                      style="
-                        background-image: url(https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-9-1024x683.jpg);
-                      "
-                      role="img"
-                      aria-label="Bedroom 9"
-                    ></div>
-                    <div class="elementor-cta__bg-overlay"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="elementor-element elementor-element-bb11dee e-con-full e-flex e-con e-parent"
-          data-id="bb11dee"
-          data-element_type="container"
-          data-settings='{"background_background":"classic"}'
-        >
-          <div
-            class="elementor-element elementor-element-28d2788 elementor-widget elementor-widget-gallery"
-            data-id="28d2788"
-            data-element_type="widget"
-            data-settings='{"gallery_layout":"justified","lazyload":"yes","ideal_row_height":{"unit":"px","size":200,"sizes":[]},"ideal_row_height_tablet":{"unit":"px","size":150,"sizes":[]},"ideal_row_height_mobile":{"unit":"px","size":150,"sizes":[]},"gap":{"unit":"px","size":10,"sizes":[]},"gap_tablet":{"unit":"px","size":10,"sizes":[]},"gap_mobile":{"unit":"px","size":10,"sizes":[]},"link_to":"file","overlay_background":"yes","content_hover_animation":"fade-in"}'
-            data-widget_type="gallery.default"
-          >
-            <div class="elementor-widget-container">
-              <div class="elementor-gallery__container">
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/ENTRANCE.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="ENTRANCE"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQyNCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0VOVFJBTkNFLmpwZyIsInNsaWRlc2hvdyI6IjI4ZDI3ODgifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/ENTRANCE-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/DECORATION.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="DECORATION"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQyMSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0RFQ09SQVRJT04uanBnIiwic2xpZGVzaG93IjoiMjhkMjc4OCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/DECORATION-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/CASITA-CLOSEUP-scaled-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="CASITA-CLOSEUP"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQxOCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL0NBU0lUQS1DTE9TRVVQLXNjYWxlZC0xLmpwZyIsInNsaWRlc2hvdyI6IjI4ZDI3ODgifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/CASITA-CLOSEUP-scaled-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-10.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="BEDROOM 10"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUxMSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0JFRFJPT00tMTAuanBnIiwic2xpZGVzaG93IjoiMjhkMjc4OCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BEDROOM-10-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-10.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="BATHROOM 10"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTUwNywidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMlwvMDFcL0JBVEhST09NLTEwLmpwZyIsInNsaWRlc2hvdyI6IjI4ZDI3ODgifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2022/01/BATHROOM-10-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Exterior-Kitchen-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="Exterior-Kitchen-1"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDA0MCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL0V4dGVyaW9yLUtpdGNoZW4tMS5qcGciLCJzbGlkZXNob3ciOiIyOGQyNzg4In0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Exterior-Kitchen-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Outdoor-Kitchen-Area-1024x768-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="Outdoor-Kitchen-Area-1024x768"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NDA0MSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL091dGRvb3ItS2l0Y2hlbi1BcmVhLTEwMjR4NzY4LTEuanBnIiwic2xpZGVzaG93IjoiMjhkMjc4OCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Outdoor-Kitchen-Area-1024x768-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2023/02/Yogaontheterrace.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="Yogaontheterrace"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NzM0MSwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMDJcL1lvZ2FvbnRoZXRlcnJhY2UuanBnIiwic2xpZGVzaG93IjoiMjhkMjc4OCJ9"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2023/02/Yogaontheterrace-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Aerial-New-1024x683-1.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="Aerial-New-1024x683"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6Mzk1MiwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDlcL0FlcmlhbC1OZXctMTAyNHg2ODMtMS5qcGciLCJzbGlkZXNob3ciOiIyOGQyNzg4In0%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/09/Aerial-New-1024x683-1-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-                <a
-                  class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                  href="https://www.oodlesretreat.com/wp-content/uploads/2021/08/OUTDOOR-KITCHEN-copy.jpg"
-                  data-elementor-open-lightbox="yes"
-                  data-elementor-lightbox-slideshow="28d2788"
-                  data-elementor-lightbox-title="OUTDOOR-KITCHEN-copy"
-                  data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjQ0NCwidXJsIjoiaHR0cHM6XC9cL3d3dy5vb2RsZXNyZXRyZWF0LmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyMVwvMDhcL09VVERPT1ItS0lUQ0hFTi1jb3B5LmpwZyIsInNsaWRlc2hvdyI6IjI4ZDI3ODgifQ%3D%3D"
-                >
-                  <div
-                    class="e-gallery-image elementor-gallery-item__image"
-                    data-thumbnail="https://www.oodlesretreat.com/wp-content/uploads/2021/08/OUTDOOR-KITCHEN-copy-150x150.jpg"
-                    data-width="150"
-                    data-height="150"
-                    aria-label
-                    role="img"
-                  ></div>
-                  <div class="elementor-gallery-item__overlay"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-3f4fbfff elementor-section-full_width elementor-section-height-min-height elementor-section-items-stretch elementor-section-content-middle elementor-reverse-mobile elementor-section-height-default elementor-invisible"
-          data-id="3f4fbfff"
-          data-element_type="section"
-          data-settings='{"background_background":"classic","animation":"fadeIn"}'
-        >
-          <div class="elementor-container elementor-column-gap-no">
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4747a653"
-              data-id="4747a653"
-              data-element_type="column"
-              data-settings='{"background_background":"classic"}'
-            >
-              <div class="elementor-widget-wrap elementor-element-populated">
-                <div
-                  class="elementor-element elementor-element-52381508 elementor-widget elementor-widget-heading"
-                  data-id="52381508"
-                  data-element_type="widget"
-                  data-widget_type="heading.default"
-                >
-                  <div class="elementor-widget-container">
-                    <h2 class="elementor-heading-title elementor-size-default">
-                      <a
-                        href="https://demo05.gethomey.io/listing/franklin-room/"
-                        >Annexe Suite
-                      </a>
-                    </h2>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-1413c98 elementor-widget elementor-widget-text-editor"
-                  data-id="1413c98"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <p>A great hideaway for retreat organisers</p>
-                    <p></p>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-28d755b9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                  data-id="28d755b9"
-                  data-element_type="widget"
-                  data-widget_type="divider.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div class="elementor-divider">
-                      <span class="elementor-divider-separator"> </span>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="elementor-element elementor-element-5fb14673 elementor-widget elementor-widget-text-editor"
-                  data-id="5fb14673"
-                  data-element_type="widget"
-                  data-widget_type="text-editor.default"
-                >
-                  <div class="elementor-widget-container">
-                    <div
-                      class="wpb_text_column wpb_content_element vc_custom_1542316979999"
-                    >
-                      <div class="wpb_wrapper">
                         <div
-                          class="wpb_text_column wpb_content_element vc_custom_1542316936543"
+                          class="elementor-element elementor-element-4086a008 elementor-widget elementor-widget-text-editor"
+                          data-id="4086a008"
+                          data-element_type="widget"
+                          data-widget_type="text-editor.default"
                         >
-                          <div class="wpb_wrapper">
-                            <div
-                              class="wpb_column vc_column_container vc_col-sm-8"
-                            >
-                              <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                  <div
-                                    class="wpb_text_column wpb_content_element vc_custom_1542232828807"
-                                  >
-                                    <div class="wpb_wrapper">
-                                      <p>
-                                        <strong
-                                          >Sleeps 4 &#8211; Two King Size or
-                                          Twin Beds &amp; En-suite Bathroom<br /></strong
-                                        >The perfect add on if you need a little
-                                        extra space away from the main group.
-                                        Our deluxe suite has a spacious lounge
-                                        area with en-suite facilities and patio
-                                        doors leading to a private terrace.
-                                      </p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                          <div class="elementor-widget-container">
+                            <style>
+                              /*! elementor - v3.21.0 - 26-05-2024 */
+                              .elementor-widget-text-editor.elementor-drop-cap-view-stacked
+                                .elementor-drop-cap {
+                                background-color: #69727d;
+                                color: #fff;
+                              }
+                              .elementor-widget-text-editor.elementor-drop-cap-view-framed
+                                .elementor-drop-cap {
+                                color: #69727d;
+                                border: 3px solid;
+                                background-color: transparent;
+                              }
+                              .elementor-widget-text-editor:not(
+                                  .elementor-drop-cap-view-default
+                                )
+                                .elementor-drop-cap {
+                                margin-top: 8px;
+                              }
+                              .elementor-widget-text-editor:not(
+                                  .elementor-drop-cap-view-default
+                                )
+                                .elementor-drop-cap-letter {
+                                width: 1em;
+                                height: 1em;
+                              }
+                              .elementor-widget-text-editor
+                                .elementor-drop-cap {
+                                float: left;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 50px;
+                              }
+                              .elementor-widget-text-editor
+                                .elementor-drop-cap-letter {
+                                display: inline-block;
+                              }
+                            </style>
+                            {{page.body|richtext}}
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                </section>
               </div>
-            </div>
-            <div
-              class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-200b3998"
-              data-id="200b3998"
-              data-element_type="column"
-              data-settings='{"background_background":"classic"}'
-            >
-              <div class="elementor-widget-wrap"></div>
             </div>
           </div>
         </section>
         <section
-          class="elementor-section elementor-top-section elementor-element elementor-element-38c24132 elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
-          data-id="38c24132"
+          class="elementor-section elementor-top-section elementor-element elementor-element-1697afde elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+          data-id="1697afde"
           data-element_type="section"
           data-settings='{"background_background":"classic"}'
         >
           <div class="elementor-background-overlay"></div>
           <div class="elementor-container elementor-column-gap-default">
             <div
-              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-624c4d38"
-              data-id="624c4d38"
+              class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-16f01a38"
+              data-id="16f01a38"
               data-element_type="column"
             >
               <div class="elementor-widget-wrap elementor-element-populated">
                 <div
-                  class="elementor-element elementor-element-e97f9b3 elementor-widget elementor-widget-text-editor"
-                  data-id="e97f9b3"
+                  class="elementor-element elementor-element-74319ea9 elementor-widget elementor-widget-text-editor"
+                  data-id="74319ea9"
                   data-element_type="widget"
                   data-widget_type="text-editor.default"
                 >
                   <div class="elementor-widget-container">
-                    <h1>
-                      <strong
-                        >Let&#8217;s chat about hosting your
-                        retreat&#8230;</strong
-                      >
-                    </h1>
+                    {% get_footer_header %}
                     <h4>
                       <strong>Address: </strong>{{settings.base.GenericSettings.address}}<br /><strong>Phone</strong>: {{settings.base.GenericSettings.phone}}<br /><strong
                         >Email</strong
                       >:
                       <a
-                        href="/cdn-cgi/l/email-protection"
-"51383f373e113e3e353d3422233425233430257f323e3c"
-                        >{{settings.base.GenericSettings.email}}</a
+                        href="/cdn-cgi/l/email-protection">
+                        {{settings.base.GenericSettings.email}}</a
                       ><strong><br /></strong>
                     </h4>
                   </div>
                 </div>
                 <div
-                  class="elementor-element elementor-element-4d91f347 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                  data-id="4d91f347"
+                  class="elementor-element elementor-element-57bce505 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                  data-id="57bce505"
                   data-element_type="widget"
                   data-widget_type="icon-list.default"
                 >
                   <div class="elementor-widget-container">
+                    <link
+                      rel="stylesheet"
+                      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+                    />
                     <ul
                       class="elementor-icon-list-items elementor-inline-items"
                     >
@@ -5700,8 +3103,8 @@
                   </div>
                 </div>
                 <div
-                  class="elementor-element elementor-element-52352740 elementor-widget elementor-widget-heading"
-                  data-id="52352740"
+                  class="elementor-element elementor-element-679ec84c elementor-widget elementor-widget-heading"
+                  data-id="679ec84c"
                   data-element_type="widget"
                   data-widget_type="heading.default"
                 >
@@ -5719,7 +3122,8 @@
         </section>
       </div>
     </div>
-{% include "includes/footer.html" %}    <div
+{% include "includes/footer.html" %}
+    <div
       id="overlay-search-advanced-module"
       class="overlay-search-module overlay-search-advanced-module overlay-search-contentscale"
     >
@@ -14446,11 +11850,11 @@
                     type="hidden"
                     id="homey_login_security"
                     name="homey_login_security"
-                    value="3d3a0496cf"
+                    value="2d7c2f4a15"
                   /><input
                     type="hidden"
                     name="_wp_http_referer"
-                    value="/retreat-accommodation/"
+                    value="/privacy-policy-2/"
                   />
                   <input
                     type="hidden"
@@ -14537,11 +11941,11 @@
                   type="hidden"
                   id="homey_resetpassword_security"
                   name="homey_resetpassword_security"
-                  value="5a143110b8"
+                  value="86dc2124f0"
                 /><input
                   type="hidden"
                   name="_wp_http_referer"
-                  value="/retreat-accommodation/"
+                  value="/privacy-policy-2/"
                 />
                 <button
                   type="submit"
@@ -14587,14 +11991,7 @@
     <link
       rel="stylesheet"
       id="redux-custom-fonts-css"
-      href="//www.oodlesretreat.com/wp-content/uploads/redux/custom-fonts/fonts.css?ver=1721338902"
-      type="text/css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      id="elementor-gallery-css"
-      href="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min.css?ver=1.2.0"
+      href="//www.oodlesretreat.com/wp-content/uploads/redux/custom-fonts/fonts.css?ver=1721287494"
       type="text/css"
       media="all"
     />
@@ -14684,7 +12081,7 @@
       /* <![CDATA[ */
       var wpsbc = {
         ajax_url: "https:\/\/www.oodlesretreat.com\/wp-admin\/admin-ajax.php",
-        search_form_nonce: "48f8d1a9a6",
+        search_form_nonce: "14fdc03917",
         search_date_format: "MM d, yy",
         calendar_months_to_jump: "",
       };
@@ -14859,8 +12256,7 @@
         admin_url: "https:\/\/www.oodlesretreat.com\/wp-admin\/",
         homey_is_rtl: "no",
         redirect_type: "same_page",
-        login_redirect:
-          "https:\/\/www.oodlesretreat.com\/retreat-accommodation\/",
+        login_redirect: "https:\/\/www.oodlesretreat.com\/privacy-policy-2\/",
         woo_checkout_url: "",
         login_loading: "Sending user info, please wait...",
         direct_pay_text: "Processing, Please wait...",
@@ -15048,11 +12444,6 @@
     ></script>
     <script
       type="text/javascript"
-      src="https://www.oodlesretreat.com/wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.min.js?ver=1.2.0"
-      id="elementor-gallery-js"
-    ></script>
-    <script
-      type="text/javascript"
       src="https://www.oodlesretreat.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.19.3"
       id="elementor-pro-webpack-runtime-js"
     ></script>
@@ -15070,7 +12461,7 @@
       /* <![CDATA[ */
       var ElementorProFrontendConfig = {
         ajaxurl: "https:\/\/www.oodlesretreat.com\/wp-admin\/admin-ajax.php",
-        nonce: "9561fb7b9f",
+        nonce: "66d42ad614",
         urls: {
           assets:
             "https:\/\/www.oodlesretreat.com\/wp-content\/plugins\/elementor-pro\/assets\/",
@@ -15231,8 +12622,8 @@
           lightbox_description_src: "description",
         },
         post: {
-          id: 8175,
-          title: "Retreat%20Accommodation%20%E2%80%93%20www.oodlesretreat.com",
+          id: 3469,
+          title: "Privacy%20Policy%20%E2%80%93%20www.oodlesretreat.com",
           excerpt: "",
           featuredImage: false,
         },

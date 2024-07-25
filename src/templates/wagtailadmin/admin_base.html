@@ -1,0 +1,19 @@
+{% extends "wagtailadmin/admin_base.html" %}
+
+{% load static wagtailimages_tags %}
+
+{% block branding_favicon %}
+    {% comment %} <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" /> {% endcomment %}
+
+{% endblock %}
+
+{% block branding_title %}
+
+{% with title=settings.base.SiteSettings.branding_title %}
+{% if title %}
+{{title}}
+{% else %}
+Add Title
+{% endif %}
+{% endwith %}
+{% endblock %}

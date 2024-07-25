@@ -1,0 +1,12 @@
+{% extends "wagtailadmin/home.html" %}
+
+{% block branding_welcome %}
+
+
+{% if welcome %}
+{{welcome}}
+{% else %}
+Welcome to {{site_name|capfirst}} CMS!
+{% endif %}
+
+{% endblock %}

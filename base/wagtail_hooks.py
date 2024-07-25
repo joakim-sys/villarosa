@@ -18,5 +18,10 @@ class NavigationSnippetViewSetGroup(SnippetViewSetGroup):
     menu_label = 'Navigation Links'
     items = (NavigationMenuViewSet,)
 
+class FooterSnippetViewSetGroup(SnippetViewSetGroup):
+    menu_label = 'Footer Settings'
+    items = (FooterHeaderViewSet,)
+
+
+register_snippet(FooterSnippetViewSetGroup)
 register_snippet(NavigationSnippetViewSetGroup)
-register_snippet(FooterHeaderViewSet)
