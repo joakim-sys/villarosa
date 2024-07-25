@@ -24,10 +24,9 @@ INSTALLED_APPS = [
     # 'accomodation',
     'base',
     "home",
-    # "crispy_forms",
-    # "crispy_bootstrap5",
+    "crispy_forms",
+    "crispy_bootstrap5",
     "search",
-    # 'wagtailmenus',
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
@@ -196,7 +195,6 @@ WAGTAILSEARCH_BACKENDS = {
         "BACKEND": "wagtail.search.backends.database",
     }
 }
-ADMIN_PASSWORD = os.environ.get("ADMIN_PASSWORD", "changethispassword")
 
 WAGTAIL_CONTENT_LANGUAGES = LANGUAGES = [
     ("en", "English"),
