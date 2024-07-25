@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     "home",
     "crispy_forms",
     "crispy_bootstrap5",
-    "search",
     "wagtail.contrib.forms",
     "wagtail.contrib.redirects",
     "wagtail.embeds",
